@@ -1,0 +1,20 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine-content">
+  <view class="mine-login">登录, 个人信息></view>
+  
+  <mine-record title="我的管家" more="全部管理 >">
+    <view>
+      我的物业费,我的报修,搬运家政,我的门禁,我的车位
+    </view>
+  </mine-record>
+  
+  <mine-record title="我的订单" more="全部订单 >">
+    <view>
+      待付款,待发货,待收货,待评价
+    </view>
+  </mine-record>
+
+</view>
+
+
+

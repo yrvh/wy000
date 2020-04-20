@@ -1,0 +1,10 @@
+/* pages/repair/repairing/repairing.wxss */
+page {background-color: #f3f3f3;}
+
+.repairing-box {background-color: #fff; padding: 20rpx 20rpx 0; display: flex; justify-content: flex-start; margin-bottom: 11rpx;}
+
+.repairing-img {height: 240rpx; width: 250rpx;}
+.repairing-img image { width: 230rpx; height: 230rpx;}
+.repairing-content {height: 240rpx; flex: 1; color: #555;}
+.repairing-content .house {color: #1cbbb4; font-size: 36rpx; height: 60rpx;}
+.repairing-content .date {margin-top: 12rpx; border-top: 1rpx solid #ddd; color: #888;}

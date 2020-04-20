@@ -1,0 +1,52 @@
+<!--pages/feewait/feewait.wxml-->
+<view class="fee-top">
+  <view>全勾选</view>
+  <view>缴费</view>
+  <!-- <button size="mini" type="primary">全部勾选</button>
+  <button size="mini" type="primary">缴费</button> -->
+</view>
+<view class="fee-top-place"></view>
+
+<block wx:for="{{3}}" wx:key="index">
+  <view class="fee-body">
+    <view class="fee-date">[ ] 2020年01月费用(4#1503)</view>
+    <view class="fee-thead">
+      <view>费用</view>
+      <view>数量</view>
+      <view>单价</view>
+    </view>
+    <view class="fee-items">
+      <view>
+        <view>物业费:70元</view>
+        <view>100m2</view>
+        <view>0.7元/m2</view>
+      </view>
+      <view>
+        <view>水费:20元</view>
+        <view>10吨</view>
+        <view>2元/吨</view>
+      </view>
+      <view>
+        <view>电费:60元</view>
+        <view>100度</view>
+        <view>0.6元/度</view>
+      </view>
+      <view>
+        <view>垃圾:10元</view>
+        <view>1户</view>
+        <view>10元/户/月</view>
+      </view>
+      <view>
+        <view>公共水电:12元</view>
+        <view>1户</view>
+        <view>12元/户/月</view>
+      </view>
+      <view>
+        <view>合计:172元</view>
+        
+      </view>
+      <view class="fee-items-bottom">备注:请在02月15日前 缴纳费用,逾期产生的滞纳金按照每个月3%收取</view>
+    </view>
+  </view>
+
+</block>

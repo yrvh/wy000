@@ -1,0 +1,121 @@
+<!--pages/home/home.wxml-->
+<!-- home页面顶部 -->
+<view class="home-top">
+  <!-- home页面搜索框 -->
+  <view class="home-search">
+    <text class="iconfont icon-home-search"></text>
+    <input placeholder="请输入内容..."></input>
+    <text class="iconfont icon-home-quickmark"></text>
+  </view>
+  <!-- 搜索页占位 -->
+  <view class="home-place"></view>
+</view>
+
+<!-- home页面的搜索常用词 -->
+<view class="home-hotword"></view>
+
+<!-- home页面的轮播图 -->
+<view class="home-swipers">
+  <view class="home-weather">
+    <view>北海,天气,晴天</view>
+    <view>东方之珠小区</view>
+  </view>
+  <swiper class="swipers"
+          indicator-dots 
+          indicator-color="rgba(230,230,230,0.2)"
+          indicator-active-color="rgba(0,0,0,0.6)"
+          autoplay
+          interval="{{4000}}"
+          duration="{{600}}"
+          circular
+          easing-function="linear">
+    <block wx:for="{{img_arr}}" wx:key="index">
+      <swiper-item item-id="index">
+        <image class="img-item" src="/assets/swipers/{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>
+
+<!-- home页面的导航区 -->
+<view class="home-nav home-nav1">
+  <nav-icon title="物业缴费" img-icon="img-fee iconfont icon-home-fee" page_url="{{['fee','feewait']}}"/>
+  <nav-icon title="房屋报修" img-icon="img-repair iconfont icon-home-repair" page_url="{{['repair','repairwait']}}"/>
+  <nav-icon title="出租托管" img-icon="img-rent iconfont icon-home-rent" page_url="{{['rent']}}"/>
+  <nav-icon title="车位门禁" img-icon="img-park iconfont icon-home-park" page_url="{{['park','parkwait']}}"/>
+</view>
+<view class="home-nav home-nav2">
+  <nav-icon title="楼下小店" img-icon="img-store iconfont icon-home-store" page_url="{{['store','storewait']}}"/>
+  <nav-icon title="沙石搬运" img-icon="img-carry iconfont icon-home-carry" page_url="{{['carry','carrywait']}}"/>
+  <nav-icon title="家政服务" img-icon="img-housewifery iconfont icon-home-housewifery" page_url="{{['housewifery','housewiferywait']}}"/>
+  <nav-icon title="室内装修" img-icon="img-decorate iconfont icon-home-decorate" page_url="{{['decorate','decoratewait']}}"/>
+</view>
+
+<!-- home页面的内容 -->
+<view class="home-content">
+  <home-detail title="小区头条">
+    <view>
+      <view> 这是头条内容1...</view>
+      <view> 这是头条内容3...</view>
+      <view> 这是头条内容5...</view>
+      <view> 这是头条内容7...</view>
+    </view>
+  </home-detail>
+  <home-detail title="装修搬运">
+    <view>
+      <view> 这是装修搬运1...</view>
+      <view> 这是装修搬运3...</view>
+      <view> 这是装修搬运5...</view>
+      <view> 这是装修搬运7...</view>
+    </view>
+  </home-detail>
+  <home-detail title="投诉建议">
+    <view>
+      <view> 这是投诉建议1...</view>
+      <view> 这是投诉建议3...</view>
+      <view> 这是投诉建议5...</view>
+      <view> 这是投诉建议7...</view>
+    </view>
+  </home-detail>
+  <home-detail title="出租托管">
+    <view>
+      <view> 这是出租托管1...</view>
+      <view> 这是出租托管3...</view>
+      <view> 这是出租托管5...</view>
+      <view> 这是出租托管7...</view>
+    </view>
+  </home-detail>
+  <home-detail title="业主委会">
+    <view>
+      <view> 这是业主委会1...</view>
+      <view> 这是业主委会3...</view>
+      <view> 这是业主委会5...</view>
+      <view> 这是业主委会7...</view>
+    </view>
+  </home-detail>
+  <home-detail title="业主认证">
+    <view>
+      <view> 这是业主认证1...</view>
+      <view> 这是业主认证3...</view>
+      <view> 这是业主认证5...</view>
+      <view> 这是业主认证7...</view>
+    </view>
+  </home-detail>
+  <home-detail title="小区电话">
+    <view>
+      <view> 这是小区电话1...</view>
+      <view> 这是小区电话3...</view>
+      <view> 这是小区电话5...</view>
+      <view> 这是小区电话7...</view>
+    </view>
+  </home-detail>
+  <home-detail title="物业介绍" border1="border1">
+    <view>
+      <view> 这是物业介绍1...</view>
+      <view> 这是物业介绍3...</view>
+      <view> 这是物业介绍5...</view>
+      <view> 这是物业介绍7...</view>
+    </view>
+  </home-detail>
+</view>

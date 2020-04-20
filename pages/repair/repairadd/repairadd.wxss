@@ -1,0 +1,7 @@
+/* pages/repair/repairadd/repairadd.wxss */
+page>view {height: 100rpx; text-align: right; border-bottom: 1rpx solid #ddd; display: flex; justify-content: flex-start; align-items: center; padding: 0 20rpx;}
+page>view>text {display: inline-block; flex: 1; font-size: 36rpx; color: #333;}
+
+page>view>view {flex: 3; text-align: left; padding-left: 30rpx;}
+.radio-group radio {margin-right: 40rpx;}
+

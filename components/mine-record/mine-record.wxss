@@ -1,0 +1,7 @@
+/* components/mine-record/mine-record.wxss */
+
+.record {background-color: #fff; box-sizing: border-box; width: 100%; height: 200rpx; padding: 0 20rpx; margin: 40rpx 0;}
+
+.record-row {width: 100%; display:flex;justify-content: space-between; align-items: center; margin-bottom: 20rpx;}
+.record .title {font-size: 35rpx;}
+.record .more {color: #999;}

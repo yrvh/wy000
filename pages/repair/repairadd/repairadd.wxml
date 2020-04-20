@@ -1,0 +1,48 @@
+<!--pages/repair/repairadd/repairadd.wxml-->
+<view class="repairadd-house">
+  <text>房间号: </text>
+  <view>
+    <input placeholder='例如"5栋505" 写成 "5#505"'/>
+  </view>
+</view>
+
+<view>
+  <text>报修人: </text>
+  <view>
+    <input placeholder='请输入报修人'/>
+  </view>
+</view>
+
+<view>
+  <text>电话号码: </text>
+  <view>
+    <input placeholder='请输入电话号码'/>
+  </view>
+</view>
+<view>
+  <text>报修区域:</text>
+  <view>
+    <radio-group class="radio-group" bindchange="">
+      <radio checked><text>业主室内</text></radio>
+      <radio><text>小区公共</text></radio>
+    </radio-group>
+  </view>
+</view>
+
+<view>
+  <text>报修问题:</text>
+  <view>
+    <input placeholder='请输入报修问题'/>
+  </view>
+</view>
+
+<view>
+  <text>报修照片:</text>
+  <view>
+    <mp-cells>
+      <mp-cell>
+          <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="5" title="图片上传" tips="图片上传提示"></mp-uploader>
+      </mp-cell>
+    </mp-cells>
+  </view>
+</view>

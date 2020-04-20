@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#1cbbb4",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "报修管理",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 30,
+  "usingComponents": {}
+}

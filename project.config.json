@@ -1,0 +1,145 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.4",
+	"appid": "wx7f3cb5faa39b006d",
+	"projectname": "wy000",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dynamic/dynamic",
+					"pathName": "pages/dynamic/dynamic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/message/message",
+					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fee/fee",
+					"pathName": "pages/fee/fee",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/serve/serve",
+					"pathName": "pages/serve/serve",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/manage/manage",
+					"pathName": "pages/manage/manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fee/feewait/feewait",
+					"pathName": "pages/fee/feewait/feewait",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fee/feerecord/feerecord",
+					"pathName": "pages/fee/feerecord/feerecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/repair/repairwait/repairwait",
+					"pathName": "pages/repair/repairwait/repairwait",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/repair/repairing/repairing",
+					"pathName": "pages/repair/repairing/repairing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/repair/repairfinish/repairfinish",
+					"pathName": "pages/repair/repairfinish/repairfinish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/repair/repairadd/repairadd",
+					"pathName": "pages/repair/repairadd/repairadd",
+					"scene": null
+				}
+			]
+		}
+	}
+}

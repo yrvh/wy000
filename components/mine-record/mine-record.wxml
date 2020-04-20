@@ -1,0 +1,8 @@
+<!--这是mine页面用到的组件, 用于展示个人的各项记录-->
+<view class="record">
+  <view class="record-row">
+    <view class="title">{{title}}</view>
+    <view class="more">{{more}}</view>
+  </view>
+  <slot/>
+</view>

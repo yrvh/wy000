@@ -1,0 +1,10 @@
+@import '/assets/iconfont/iconfont.wxss';
+
+view,text,scroll-view {font-size: 32rpx;}
+
+/* 报修页面的tabbar公共样式 */
+.cst-tabbar2 {background-color: rgba(230, 230, 230, 0.7) !important;}
+.act-img2 {color:#1cbbb4 !important;}
+.act-text2 {color:#1cbbb4 !important;}
+/* 添加报修公共样式 */
+.repair-add {width: 160rpx; height: 70rpx; background-color: rgba(28, 187, 180, 0.7); position: fixed; right: 0; top: 700rpx; color: #fff;font-size: 44rpx; text-align: center; line-height: 70rpx; border-radius: 40rpx;}

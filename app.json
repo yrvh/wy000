@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/dynamic/dynamic",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/fee/feewait/feewait",
+    "pages/fee/feerecord/feerecord",
+    "pages/repair/repairwait/repairwait",
+    "pages/repair/repairing/repairing",
+    "pages/repair/repairfinish/repairfinish",
+    "pages/repair/repairadd/repairadd",
+    "pages/rent/rent"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39B54A",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "社区两公里",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 30
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#39B54A",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/icon/home.png",
+        "selectedIconPath": "/assets/icon/home1.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "动态",
+        "iconPath": "/assets/icon/dynamic.png",
+        "selectedIconPath": "/assets/icon/dynamic1.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/assets/icon/message.png",
+        "selectedIconPath": "/assets/icon/message1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/assets/icon/mine.png",
+        "selectedIconPath": "/assets/icon/mine1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "nav-icon": "/components/nav-icon/nav-icon",
+    "show-detail": "/components/show-detail/show-detail",
+    "custom-tabbar": "/components/custom-tabbar/custom-tabbar"
+  }
+}

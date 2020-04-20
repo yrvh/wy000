@@ -1,0 +1,13 @@
+/* pages/fee/feerecord/feerecord.wxss */
+page {box-sizing: border-box; width: 100%; background-color: #eee; padding: 0 30rpx 40rpx;}
+
+.feerecord-body {padding: 15rpx; background-color: #fff; border-radius: 12rpx; margin-top: 40rpx;}
+
+.feerecord-status {padding: 30rpx 0; color: #666; border-bottom: 1rpx solid #ddd; display: flex; justify-content: space-between;}
+.feerecord-status text{font-size: 36rpx;}
+
+.feerecord-date {font-weight: 600; border-bottom: 1rpx solid #ddd; line-height: 50rpx; font-family: cursive;}
+
+.feerecord-thead {height: 66rpx; display: flex; justify-content: space-between; align-items: center; font-weight: 600;}
+
+.feerecord-items>view {height: 66rpx; display: flex; justify-content: space-between; align-items: center; border-top: 1rpx solid #ddd; color: #39a54b;}

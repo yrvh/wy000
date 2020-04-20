@@ -1,0 +1,4 @@
+/* components/nav-icon/nav-icon.wxss */
+
+.image1 { width: 100rpx; height: 100rpx; border-radius: 16rpx; margin: 0 auto; background-color: #58b; text-align: center; line-height: 100rpx; color: #fff; font-size: 66rpx;} 
+.img-text {text-align: center;  margin-top: 14rpx;}

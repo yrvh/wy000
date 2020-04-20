@@ -1,0 +1,4 @@
+/* components/home-detail/home-detail.wxss */
+.home-detail {padding: 30rpx 0 60rpx; border-bottom: 14rpx solid #f0f2f2;}
+.home-detail .title {font-size: 50rpx; font-weight: 600;}
+.home-detail .more {color: #999; float: right;}

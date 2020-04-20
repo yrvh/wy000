@@ -1,0 +1,5 @@
+<!--这是展示其他页面详情的组件-->
+<view class="show-detail box1">
+  <view class="title">{{title}}</view>
+  <slot/>
+</view>

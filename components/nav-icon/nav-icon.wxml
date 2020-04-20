@@ -1,0 +1,5 @@
+<!--这是home页面,导航部分用的组件-->
+<view class="container" bindtap="handleNav">
+  <view class="image1 img-icon"></view>
+  <view class="img-text">{{title}}</view>
+</view>

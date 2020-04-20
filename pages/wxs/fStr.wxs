@@ -1,0 +1,8 @@
+
+var formatStr = function(arr){
+  var newArr = arr.map( function(item){ return '/assets/repair/'+item})
+  return newArr
+}
+module.exports = {
+  formatStr: formatStr
+}

@@ -1,0 +1,7 @@
+<!--这是自定义的tabbar组件-->
+<view class="custom-tabbar cst-tabbar">
+  <view class="tabbar-item"  wx:for="{{list.bar.length}}" wx:key="index" bindtap="handleTabbar" data-index="{{index}}"> 
+    <view class="{{['image1',index==act_index? 'act-img':'']}}">4</view>
+    <view class="{{['img-text',index==act_index? 'act-text':'']}}">{{list.bar[index]}}</view>
+  </view>
+</view>

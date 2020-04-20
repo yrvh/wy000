@@ -1,0 +1,6 @@
+<!--该组件只应用于 home页面, 是home页面中下部分的详细内容 所用到的组件-->
+<view class="home-detail border1">
+  <view class="title">{{title}}</view>
+  <slot/>
+  <view class="more">查看更多 ></view>
+</view>
