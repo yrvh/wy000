@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#b5976f",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "雕梁画栋",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "usingComponents": {}
+}

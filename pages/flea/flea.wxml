@@ -1,0 +1,24 @@
+<!--pages/flea/flea.wxml-->
+<!-- 引入自定义的tabbar -->
+<custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
+
+  <view class="v2css">该功能将在 版本2.0发布!~</view>
+  <!-- 变废为宝 -->
+  <block wx:if="{{tabs[0].isActive}}">
+    
+  </block>
+
+  <block wx:if="{{tabs[1].isActive}}">
+    
+  </block>
+
+  <!-- 我的出租记录页面 -->
+  <block wx:if="{{tabs[2].isActive}}">
+    
+  </block>
+
+  <!-- 我的记录页面 -->
+  <block wx:if="{{tabs[3].isActive}}">
+    
+  </block>
+</custom-tabbar>

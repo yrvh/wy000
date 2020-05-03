@@ -1,10 +1,16 @@
 @import '/assets/iconfont/iconfont.wxss';
 
-view,text,scroll-view {font-size: 32rpx;}
+/* 设置页面初始化样式 */
+page,view,text,text,swiper,swiper-item,image,navigator {font-size: 28rpx; margin: 0; padding: 0;box-sizing: border-box;}
 
-/* 报修页面的tabbar公共样式 */
-.cst-tabbar2 {background-color: rgba(230, 230, 230, 0.7) !important;}
-.act-img2 {color:#1cbbb4 !important;}
-.act-text2 {color:#1cbbb4 !important;}
-/* 添加报修公共样式 */
-.repair-add {width: 160rpx; height: 70rpx; background-color: rgba(28, 187, 180, 0.7); position: fixed; right: 0; top: 700rpx; color: #fff;font-size: 44rpx; text-align: center; line-height: 70rpx; border-radius: 40rpx;}
+/* 定义主题颜色 */
+page {--home_color: #39b54a;}
+page {--repair_color: #1cbbb4;}
+page {--rent_color: #fbbd08;}
+page {--park_color: #df4545;}
+page {--store_color: #f37b1d;}
+page {--carry_color: #e05997;}
+page {--flea_color: #0081df;}
+page {--decorate_color: #b5976f;}
+
+

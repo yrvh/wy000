@@ -1,0 +1,33 @@
+/* 物业缴费的样式 */
+page {width: 100%; background-color: #eee; padding: 0 30rpx 11vh;}
+/* 未交费的样式 */
+.fee-top {position: fixed; z-index: 8; top: 0; left: 0; background-color: rgba(200,250,250,.4); width: 750rpx; height: 100rpx; display: flex; justify-content: flex-end; align-items: center;}
+.fee-top view{width: 170rpx; height: 70rpx; background-color: var(--home_color); line-height: 70rpx; color: #fff; font-size: 34rpx; text-align: center; margin-left: 30rpx; border-radius: 35rpx;}
+.fee-top-place { height: 100rpx;}
+
+.fee-body {padding: 15rpx; background-color: #fff; border-radius: 12rpx; margin-top: 40rpx;}
+
+.fee-date {font-weight: 600; border-bottom: 1rpx solid #ddd; line-height: 50rpx; font-family: cursive;}
+
+.fee-thead {height: 66rpx; display: flex; justify-content: space-between; align-items: center; font-weight: 600;}
+
+.fee-items>view {height: 66rpx; display: flex; justify-content: space-between; align-items: center; border-top: 1rpx solid #ddd; color: var(--home_color);}
+.fee-items-bottom {padding: 30rpx 0; color: #666 !important;}
+
+
+/* 缴费记录的样式 */
+.feerecord-body {padding: 15rpx; background-color: #fff; border-radius: 12rpx; margin-top: 40rpx;}
+
+.feerecord-status {padding: 30rpx 0; color: #666; border-bottom: 1rpx solid #ddd; display: flex; justify-content: space-between;}
+.feerecord-status text{font-size: 36rpx;}
+
+.feerecord-date {font-weight: 600; border-bottom: 1rpx solid #ddd; line-height: 50rpx; font-family: cursive;}
+
+.feerecord-thead {height: 66rpx; display: flex; justify-content: space-between; align-items: center; font-weight: 600;}
+
+.feerecord-items>view {height: 66rpx; display: flex; justify-content: space-between; align-items: center; border-top: 1rpx solid #ddd; color: var(--home_color);}
+
+/* 页面的tabbar样式 */
+.cst-tabbar2 {background-color: rgba(230, 230, 230, 0.8) !important;}
+.act-img2 {color:var(--home_color) !important;}
+.act-text2 {color:var(--home_color) !important;}

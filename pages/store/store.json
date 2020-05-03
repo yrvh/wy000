@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#f37b1d",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "楼下小店",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "usingComponents": {}
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#0081df",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "变废为宝",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "usingComponents": {}
+}

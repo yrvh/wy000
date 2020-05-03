@@ -1,3 +1,10 @@
 {
+  "navigationBarBackgroundColor": "#fbbd08",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "业主租售",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
   "usingComponents": {}
 }

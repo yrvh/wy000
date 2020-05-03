@@ -1,7 +1,12 @@
 /* components/custom-tabbar/custom-tabbar.wxss */
-.custom-tabbar {box-sizing: border-box; width: 750rpx; height: 9vh; display: flex; justify-content: space-around; border-top: 1rpx solid #bbb; background-color:rgba(240,240,240,0.95); position: fixed; top: 100vh; left: 0; z-index: 10; transform: translateY(-99%);}
+@import '/assets/iconfont/iconfont.wxss';
 
-.tabbar-item {height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;}
+.custom-tabbar {width: 750rpx; height: 9vh; display: flex; justify-content: space-around; border-top: 1rpx solid #bbb; background-color:rgba(240,240,240,0.95); position: fixed; top: 100vh; left: 0; z-index: 10; transform: translateY(-99%);}
 
-.tabbar-item .image1 {width: 66rpx; height: 66rpx; background-color: #fcc; text-align: center; line-height: 66rpx; font-size: 30rpx;}
-.tabbar-item .img-text {font-size: 24rpx; color: #666;}
+.tabbar-item {height: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center; font-weight: 200;}
+
+.tabbar-item .image1 {width: 66rpx; height: 66rpx; text-align: center; line-height: 66rpx; font-size: 58rpx; color:#888;}
+.tabbar-item .text1 {font-size: 24rpx; color:#333;}
+
+/* 内容部分 */
+.tabbar-content {width: 100%;}

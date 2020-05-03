@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#39b54a",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "物业缴费",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "usingComponents": {}
+}

@@ -1,0 +1,2 @@
+/* components/c-tag/c-tag.wxss */
+.tag {line-height:36rpx; border-style: solid; border-width: 1rpx; display: inline-block; padding: 0 10rpx; margin-right: 15rpx; margin-bottom: 10rpx;}

@@ -1,0 +1,26 @@
+<!--pages/store/store.wxml-->
+
+<!-- 引入自定义的tabbar -->
+<custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
+
+  <!-- 小店页面 -->
+  <block wx:if="{{tabs[0].isActive}}">
+    <view>小店页面</view>
+  </block>
+
+  <!-- 分类页面 -->
+  <block wx:if="{{tabs[1].isActive}}">
+    <view>分类页面</view>
+  </block>
+
+  <!-- 购物车页面 -->
+  <block wx:if="{{tabs[2].isActive}}">
+    <view>购物车页面</view>
+  </block>
+
+  <!-- 我的页面 -->
+  <block wx:if="{{tabs[3].isActive}}">
+    <view>我的</view>
+  </block>
+  
+</custom-tabbar>

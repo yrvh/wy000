@@ -6,7 +6,7 @@ Component({
       value:'其他服务'
     },
     page_url: {
-      type: Array,
+      type: String,
       value: ''
     }
   },
@@ -16,16 +16,9 @@ Component({
   },
   methods: {
     handleNav() {
-      if(this.properties.page_url.length==2){
-        wx.navigateTo({
-          url: `/pages/${this.properties.page_url[0]}/${this.properties.page_url[1]}/${this.properties.page_url[1]}`,
-        })
-      }
-      if(this.properties.page_url.length==1){
-        wx.navigateTo({
-          url: `/pages/${this.properties.page_url[0]}/${this.properties.page_url[0]}`,
-        })
-      }
+      wx.navigateTo({
+        url: `/pages/${this.properties.page_url}/${this.properties.page_url}`,
+      })
       
       this.triggerEvent('navEvent',{},{})   // 这是向外触发的事件
     },

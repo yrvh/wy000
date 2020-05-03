@@ -1,0 +1,36 @@
+/* pages/repair/repair.wxss */
+page {background-color: #f0f0f0; padding-bottom: 10vh;}
+
+/* 添加报修的样式 */
+.repair-add {width: 160rpx; height: 70rpx; background-color: rgba(28, 187, 180, 0.7); position: fixed; right: 0; top: 700rpx; color: #fff;font-size: 44rpx; text-align: center; line-height: 70rpx; border-radius: 40rpx;}
+
+/* 报修页面的tabbar样式 */
+.cst-tabbar2 {background-color: rgba(230, 230, 230, 0.9) !important;}
+.act-img2 {color:var(--repair_color) !important;}
+.act-text2 {color:var(--repair_color) !important;}
+
+/* 等待报修的样式 */
+.repairwait-box {background-color: #fff; padding: 20rpx 20rpx 0; display: flex; justify-content: flex-start; margin-bottom: 11rpx;}
+
+.repairwait-img {height: 240rpx; width: 250rpx;}
+.repairwait-img image { width: 230rpx; height: 230rpx;}
+.repairwait-content {height: 240rpx; flex: 1; color: #555;}
+.repairwait-content .house {color: var(--repair_color); font-size: 36rpx; height: 60rpx;}
+.repairwait-content .date {margin-top: 12rpx; border-top: 1rpx solid #ddd; color: #888;}
+
+/* 修理中的样式 */
+.repairing-box {background-color: #fff; padding: 20rpx 20rpx 0; display: flex; justify-content: flex-start; margin-bottom: 11rpx;}
+
+.repairing-img {height: 240rpx; width: 250rpx;}
+.repairing-img image { width: 230rpx; height: 230rpx;}
+.repairing-content {height: 240rpx; flex: 1; color: #555;}
+.repairing-content .house {color: var(--repair_color); font-size: 36rpx; height: 60rpx;}
+.repairing-content .date {margin-top: 12rpx; border-top: 1rpx solid #ddd; color: #888;}
+
+/* 修理完成的样式 */
+.repairfinish-box {background-color: #fff; padding: 20rpx 20rpx 0; display: flex; justify-content: flex-start; margin-bottom: 11rpx;}
+.repairfinish-img {height: 240rpx; width: 250rpx;}
+.repairfinish-img image { width: 230rpx; height: 230rpx;}
+.repairfinish-content {height: 240rpx; flex: 1; color: #555;}
+.repairfinish-content .house {color: var(--repair_color); font-size: 36rpx; height: 60rpx;}
+.repairfinish-content .date {margin-top: 12rpx; border-top: 1rpx solid #ddd; color: #888;}

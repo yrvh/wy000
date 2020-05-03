@@ -2,12 +2,8 @@
 Component({
   properties: {
     list: {
-      type: Object,
+      type: Array,
       value: []
-    },
-    active_index: {
-      type: Number,
-      value: 0
     }
   },
   externalClasses: ['cst-tabbar','act-img','act-text'],
@@ -16,26 +12,13 @@ Component({
   },
   methods: {
     handleTabbar(ev){
-      this.setData({
-        act_index: ev.currentTarget.dataset.index
-      })
-      var cindex = ev.currentTarget.dataset.index
-      this.triggerEvent('tabbarEvent',{},{})
-      
-      wx.redirectTo({
-        url: this.properties.list.url[cindex]+'?index='+ cindex,
-      })
+      var tindex = ev.currentTarget.dataset.index
+      this.triggerEvent('tabbarChange',{tindex},{})
     }
   },
+
   lifetimes: {
-    created(){
-    }
   },
   pageLifetimes:{
-    show() {
-      this.setData({
-        act_index: this.properties.active_index
-      })
-    }
   }
 })

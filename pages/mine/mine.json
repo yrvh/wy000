@@ -1,7 +1,11 @@
 {
   "navigationBarBackgroundColor": "#fff",
-  "navigationBarTextStyle": "black",
+  "navigationBarTextStyle": "white",
   "navigationBarTitleText": "个人中心",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
   "usingComponents": {
     "mine-record": "/components/mine-record/mine-record"
   }

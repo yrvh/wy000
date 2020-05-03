@@ -5,9 +5,9 @@
 .home-search text {font-size: 42rpx; color: #666;}
 .home-search input {flex: 2; margin: 0 10rpx;}
 
-.home-place {width: 100%; height: 90rpx; background-color: #39b54a;}
+.home-place {width: 100%; height: 90rpx; background-color: var(--home_color);}
 
-.home-hotword { width: 100%; height: 260rpx; background-color: #39b54a; border-bottom-left-radius: 50% 20rpx; border-bottom-right-radius: 50% 20rpx;}
+.home-hotword { width: 100%; height: 260rpx; background-color: var(--home_color); border-bottom-left-radius: 50% 20rpx; border-bottom-right-radius: 50% 20rpx;}
 
 /* home页面轮播图样式 */
 .home-swipers {height: 400rpx; width: 90%; border-radius: 14rpx; position: relative; margin: -140rpx auto 0; box-shadow: 0 6rpx 10rpx 0 #999;}
@@ -31,7 +31,7 @@
 /* .img-store {background: linear-gradient(45deg,#c52d22, #e54d42,#ff7d72);} */
 .img-store {background: linear-gradient(45deg, #d35b00,#f37b1d),#ff9b3d;}
 .img-carry {background: linear-gradient(45deg,#c03977,#e05997,#ff79b7);}
-.img-housewifery {background: linear-gradient(45deg, #0061bf,#0081df,#30b1ff);}
+.img-flea {background: linear-gradient(45deg, #0061bf,#0081df,#30b1ff);}
 .img-decorate {background: linear-gradient(45deg,#b5774f,#d5976f,#f5b78f);}
 
 .home-content {padding: 0 20rpx;}

@@ -1,7 +1,7 @@
-
-var formatStr = function(arr){
-  var newArr = arr.map( function(item){ return '/assets/repair/'+item})
-  return newArr
+// 处理文件路径
+var formatStr = function(url,str){
+  var newStr = '/assets/'+url+'/'+str
+  return newStr
 }
 module.exports = {
   formatStr: formatStr

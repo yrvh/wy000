@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#e05997",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "搬运家政",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "usingComponents": {}
+}

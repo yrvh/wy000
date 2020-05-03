@@ -1,0 +1,12 @@
+/* pages/park/park.wxss */
+
+page {padding: 30rpx 20rpx;}
+
+.park-mine {width: 100%;}
+.park-mine .mine-title {line-height: 60rpx; font-size: 36rpx; color: var(--park_color);}
+.park-mine .mine-content {height: 300rpx; font-size: 34rpx; border-radius: 15rpx; border: 6rpx ridge var(--flea_color); box-shadow: 0 6rpx 10rpx 0 #999;}
+
+.serve {background-color: #eefff0; margin-bottom: 20rpx; display: flex; justify-content: space-between; align-items: center;}
+.serve text {line-height:130rpx; font-size: 40rpx;}
+.serve view {width: 150rpx; line-height: 80rpx; border-radius: 15rpx; background-color: var(--park_color); color: #fff; font-size: 36rpx; text-align: center;}
+.park-electro {margin-top: 70rpx;}

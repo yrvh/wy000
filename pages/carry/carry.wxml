@@ -1,0 +1,26 @@
+<!--pages/carry/carry.wxml-->
+
+<!-- 引入自定义的tabbar -->
+<custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
+
+  <!-- 上沙石页面 -->
+  <block wx:if="{{tabs[0].isActive}}">
+    <view>沙石,水泥,瓷砖  V2.0 发布该功能</view>
+  </block>
+
+  <!-- 下垃圾页面 -->
+  <block wx:if="{{tabs[1].isActive}}">
+    <view>下垃圾 V2.0 发布该功能</view>
+  </block>
+
+  <!-- 找家政页面 -->
+  <block wx:if="{{tabs[2].isActive}}">
+    <view>家政 V2.0 发布该功能</view>
+  </block>
+
+  <!-- 搬运记录页面 -->
+  <block wx:if="{{tabs[3].isActive}}">
+    <view>我的记录 V2.0 发布该功能</view>
+  </block>
+  
+</custom-tabbar>

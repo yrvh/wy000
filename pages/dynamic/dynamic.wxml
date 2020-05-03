@@ -1,2 +1,55 @@
 <!--pages/dynamic/dynamic.wxml-->
-<view>这是社区圈动态</view>
+
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
+<block wx:for="{{img_arr0}}" wx:key="index">
+  <view class="dynamicbox">
+    <view class="dynamic-top">
+      <image class="avatar" src="{{fStr.formatStr('swipers',item.ava)}}" mode="aspctFill" lazy-load webp></image>
+      <view class="info">
+        <view class="info-name">
+          {{item.nickname}}
+          <text class="iconfont {{item.gender? 'icon-dynamic-man':'icon-dynamic-woman'}} {{item.gender? 'man':''}}"></text>
+        </view>
+        <view class="info-location">
+          广东广州.白云区
+          <text class="iconfont icon-dynamic-location"></text>
+        </view>
+      </view>
+      <view class="date">{{item.date}}</view>
+    </view>
+    
+    <view class="dynamic-text">{{item.txt}}</view>
+    <view class="dynamic-pic">
+      <image  src="{{fStr.formatStr('swipers',item.img)}}" mode="aspctFit" lazy-load webp></image>
+    </view>
+
+    <view class="dynamic-button">
+      <view class="btn-praise iconfont icon-dynamic-praise" bindtap="handlePraise" data-index="{{index}}"><text>{{item.praiseNum}}</text></view>
+      <view class="btn-msg iconfont icon-dynamic-msg" bindtap="handleMore" data-index="{{index}}"><text>{{item.msg.length}}</text></view>
+      <view class="btn-collect iconfont icon-dynamic-collect"><text>收藏</text></view>
+      <view class="btn-dialog iconfont icon-dynamic-dialog"></view>
+    </view>
+  </view>
+
+
+  <view class="dynamic-message {{item.msg.length>0? 'message-format': '' }}">
+    <view class="message-item" wx:for="{{2}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2" wx:if="{{item.msg.length>0 && item.hiddenMore}}">
+      <text>{{item.msg[index2].name}} : </text>{{item.msg[index2].content}}
+    </view>
+    <view wx:if="{{item.msg.length > 2 && item.hiddenMore}}" class="message-more" bindtap="handleMore" data-index="{{index}}">
+      查看更多 >
+    </view>
+
+    <view class="message-item" wx:for="{{item.msg}}" wx:for-item="msg_item" wx:for-index="msg_index" wx:key="msg_index" wx:if="{{!item.hiddenMore}}">
+      <text>{{msg_item.name}} : </text>{{msg_item.content}}
+    </view>
+
+    <view wx:if="{{!item.hiddenMore}}" class="message-more" bindtap="handleMore"  data-index="{{index}}">
+      收起详情 >
+    </view>
+
+  </view>
+
+</block>

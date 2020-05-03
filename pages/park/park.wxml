@@ -1,0 +1,20 @@
+<!--pages/park/park.wxml-->
+<view class="park-mine">
+  <view class="mine-title">我的已购项:</view>
+  <view class="mine-content"></view>
+</view>
+<view class="park-electro serve">
+  <text>电动车/剩余63</text>
+  <view>抢车位</view>
+</view>
+
+<view class="park-automobile serve">
+  <text>汽车/剩余30</text>
+  <view>抢车位</view>
+</view>
+
+<view class="park-door serve">
+  <text>小区门禁</text>
+  <view>办门禁卡</view>
+</view>
+

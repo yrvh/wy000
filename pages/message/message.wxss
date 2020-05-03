@@ -1,1 +1,12 @@
 /* pages/message/message.wxss */
+
+.msgbox {box-sizing: content-box; height: 120rpx; padding: 20rpx 20rpx; border-bottom: 1rpx solid #ddd;}
+.msgbox .avatar {float: left; height: 120rpx; width: 120rpx; border-radius: 14rpx; margin-right: 30rpx;}
+.msgbox .info {float: left; height: 100%; display: flex; flex-direction: column; justify-content: center;}
+.msgbox .info-name {line-height: 45rpx;}
+.msgbox .info-name text{color: #ff3ec9; font-size: 36rpx;}
+.man {color: #1375ff !important;}
+
+.msgbox .info-detail {line-height: 45rpx;}
+.msgbox .info-detail text{font-size: 36rpx; font-weight: 600;}
+.msgbox .date {float: right; line-height: 80rpx;}

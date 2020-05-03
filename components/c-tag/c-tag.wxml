@@ -1,0 +1,2 @@
+<!--components/c-tag/c-tag.wxml-->
+<view class="tag" style="color: {{fontcolor}};">{{name}}</view>

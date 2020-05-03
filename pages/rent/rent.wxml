@@ -1,4 +1,59 @@
 <!--pages/rent/rent.wxml-->
-<view>
-  这是出租的页面
-</view>
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
+<!-- 引入自定义的tabbar -->
+<custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
+
+  <!-- 找房页面 -->
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="rent-seektop">区域,租金,户型,筛选,排序</view>
+    <view class="rent-seektop-place"></view>
+
+    <view class="rent-seekbox" wx:for="{{img_arr0}}" wx:key="index" bindtap="handleDetail">
+      <image src="{{fStr.formatStr('swipers',item.img)}}" mode="aspectFill" lazy-load webp></image>
+      <view class="rent-information iconfont icon-rent-information" catchtap="handleInfo" data-dindex="{{index}}"></view>
+
+      <view class="rent-dialog" hidden="{{item.hiddenInfo}}">
+        <view class="dialog-title">整租 | 大都金沙湾</view>
+        <view class="dialog-size">70m2 | 南北通透 | 2室1厅</view>
+        <view class="dialog-tag">
+        <c-tag name="海景" fontcolor='#0081df'></c-tag>
+        <c-tag name="精装修" fontcolor='#0081df'></c-tag>
+        <c-tag name="有电梯" fontcolor='#0081df'></c-tag>
+        <c-tag name="有阳台" fontcolor='#0081df'></c-tag>
+        <c-tag name="押一付一" fontcolor='#0081df'></c-tag>
+        </view>
+        <view class="dialog-price">1200元/月</view>
+      </view>
+      
+    </view>
+  </block>
+
+
+  <!-- 发布页面 -->
+  <block wx:if="{{tabs[1].isActive}}">
+    <view class="rent-issue">
+      这是发布页面
+    </view>
+  </block>
+
+  <!-- 记录页面 -->
+  <block wx:if="{{tabs[2].isActive}}">
+    <view class="rent-top">我的发布记录:</view>
+    <view class="rent-top-place"></view>
+    
+    <view class="rent-record">
+      <view class="rent-recordbox" wx:for="{{img_arr0}}" wx:key="index" bindtap="handleDetail">
+        <image src="{{fStr.formatStr('swipers',item.img)}}" mode="aspectFill" lazy-load webp></image>
+        <view class="record-content">
+          <view class="record-title">整租 | 大都金沙湾</view>
+          <view class="record-size">70m2 | 南北通透 | 2室1厅</view>
+          <view class="record-price">1100元/月</view>
+        </view>
+      </view>
+    </view>
+    
+  </block>
+  
+</custom-tabbar>

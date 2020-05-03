@@ -50,86 +50,30 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "pages/home/home",
+					"id": 0,
+					"name": "一 首页",
 					"pathName": "pages/home/home",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/dynamic/dynamic",
-					"pathName": "pages/dynamic/dynamic",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/message/message",
-					"pathName": "pages/message/message",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/fee/fee",
+					"id": 2,
+					"name": "物业费1",
 					"pathName": "pages/fee/fee",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/serve/serve",
-					"pathName": "pages/serve/serve",
+					"id": 4,
+					"name": "搬运6",
+					"pathName": "pages/carry/carry",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/manage/manage",
-					"pathName": "pages/manage/manage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/fee/feewait/feewait",
-					"pathName": "pages/fee/feewait/feewait",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/fee/feerecord/feerecord",
-					"pathName": "pages/fee/feerecord/feerecord",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/repair/repairwait/repairwait",
-					"pathName": "pages/repair/repairwait/repairwait",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/repair/repairing/repairing",
-					"pathName": "pages/repair/repairing/repairing",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/repair/repairfinish/repairfinish",
-					"pathName": "pages/repair/repairfinish/repairfinish",
+					"id": 5,
+					"name": "小店5",
+					"pathName": "pages/store/store",
 					"query": "",
 					"scene": null
 				},
@@ -137,6 +81,63 @@
 					"id": -1,
 					"name": "pages/repair/repairadd/repairadd",
 					"pathName": "pages/repair/repairadd/repairadd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "报修2",
+					"pathName": "pages/repair/repair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "变废为宝7",
+					"pathName": "pages/flea/flea",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "装修8",
+					"pathName": "pages/decorate/decorate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "停车4",
+					"pathName": "pages/park/park",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "租售3",
+					"pathName": "pages/rent/rent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "二  动态",
+					"pathName": "pages/dynamic/dynamic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "三 消息",
+					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "四 个人中心",
+					"pathName": "pages/mine/mine",
+					"query": "",
 					"scene": null
 				}
 			]

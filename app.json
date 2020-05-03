@@ -4,14 +4,16 @@
     "pages/dynamic/dynamic",
     "pages/message/message",
     "pages/mine/mine",
-    "pages/fee/feewait/feewait",
-    "pages/fee/feerecord/feerecord",
-    "pages/repair/repairwait/repairwait",
-    "pages/repair/repairing/repairing",
-    "pages/repair/repairfinish/repairfinish",
+    "pages/repair/repair",
     "pages/repair/repairadd/repairadd",
-    "pages/rent/rent"
-    
+    "pages/rent/rent",
+    "pages/fee/fee",
+    "pages/park/park",
+    "pages/store/store",
+    "pages/carry/carry",
+    "pages/flea/flea",
+    "pages/decorate/decorate",
+    "pages/rent/rentdetail/rentdetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39B54A",
@@ -27,7 +29,7 @@
     "selectedColor": "#39B54A",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
-    "position":"bottom",
+    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -66,6 +68,7 @@
   "usingComponents": {
     "nav-icon": "/components/nav-icon/nav-icon",
     "show-detail": "/components/show-detail/show-detail",
-    "custom-tabbar": "/components/custom-tabbar/custom-tabbar"
+    "custom-tabbar": "/components/custom-tabbar/custom-tabbar",
+    "c-tag": "/components/c-tag/c-tag"
   }
 }

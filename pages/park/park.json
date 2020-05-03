@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#df4545",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "车位门禁",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "usingComponents": {}
+}
