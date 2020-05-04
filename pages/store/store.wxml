@@ -5,7 +5,11 @@
 
   <!-- 小店页面 -->
   <block wx:if="{{tabs[0].isActive}}">
-    <view>小店页面</view>
+    <view>定位,搜索框</view>
+    <view>轮播图</view>
+    <view>全部,美食,奶茶,买百货,买菜,买水果</view>
+    <view></view>
+    <view>搜索框</view>
   </block>
 
   <!-- 分类页面 -->

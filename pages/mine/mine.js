@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    mineinfo: {
+      nickname: '小赵',
+      ava: '1.jpg',
+      gender: false,
+      msg_detail: '海内存知己,天涯若比邻',
+    }
   },
 
   /**

@@ -11,7 +11,7 @@
           <text class="iconfont {{item.gender? 'icon-dynamic-man':'icon-dynamic-woman'}} {{item.gender? 'man':''}}"></text>
         </view>
         <view class="info-detail">
-          广东广州.白云区
+          {{item.msg_detail}}
         </view>
       </view>
       <view class="date">{{item.date}}</view>

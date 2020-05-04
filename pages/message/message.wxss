@@ -8,5 +8,4 @@
 .man {color: #1375ff !important;}
 
 .msgbox .info-detail {line-height: 45rpx;}
-.msgbox .info-detail text{font-size: 36rpx; font-weight: 600;}
 .msgbox .date {float: right; line-height: 80rpx;}

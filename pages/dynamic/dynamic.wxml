@@ -13,13 +13,13 @@
           <text class="iconfont {{item.gender? 'icon-dynamic-man':'icon-dynamic-woman'}} {{item.gender? 'man':''}}"></text>
         </view>
         <view class="info-location">
-          广东广州.白云区
+          {{item.location}}
           <text class="iconfont icon-dynamic-location"></text>
         </view>
       </view>
       <view class="date">{{item.date}}</view>
     </view>
-    
+
     <view class="dynamic-text">{{item.txt}}</view>
     <view class="dynamic-pic">
       <image  src="{{fStr.formatStr('swipers',item.img)}}" mode="aspctFit" lazy-load webp></image>

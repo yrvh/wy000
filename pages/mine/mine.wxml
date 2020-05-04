@@ -1,8 +1,62 @@
 <!--pages/mine/mine.wxml-->
+
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
 <view class="mine-content">
-  <view class="mine-login">登录, 个人信息></view>
+  <view class="mine-login">
+    <view class="msgbox">
+      <view class="avatar">
+        <text class="iconfont icon-mine-ava"></text>
+      </view>
+      <view class="info">
+        <view class="info-name">
+          {{mineinfo.nickname}}
+          <text class="iconfont {{item.gender? 'icon-dynamic-man':'icon-dynamic-woman'}} {{item.gender? 'man':''}}"></text>
+        </view>
+        <view class="info-detail">
+          {{mineinfo.msg_detail}}
+        </view>
+      </view>
+    </view>
+  </view>
   
-  <mine-record title="我的管家" more="全部管理 >">
+  
+  <!-- 相册 收藏 -->
+  <view class="mine-ctner">
+    <view class="mine-album mine-box">
+      <view class="icon iconfont icon-mine-album"></view>
+      <view class="title">
+        <text>相册</text>
+        <view>></view>
+      </view>
+    </view>
+    <view  class="mine-collect mine-box">
+      <view class="icon iconfont icon-mine-collect"></view>
+      <view class="title">
+        <text>收藏</text>
+        <view>></view>
+      </view>
+    </view>
+  </view>
+
+  <view  class="mine-steward mine-box">
+      <view class="icon iconfont icon-mine-steward"></view>
+      <view class="title">
+        <text>管家</text>
+        <view>></view>
+      </view>
+    </view>
+
+  <view  class="mine-set mine-box">
+      <view class="icon iconfont icon-mine-set"></view>
+      <view class="title">
+        <text>设置</text>
+        <view>></view>
+      </view>
+    </view>
+
+  <!-- <mine-record title="我的管家" more="全部管理 >">
     <view>
       我的物业费,我的报修,搬运家政,我的门禁,我的车位
     </view>
@@ -12,7 +66,7 @@
     <view>
       待付款,待发货,待收货,待评价
     </view>
-  </mine-record>
+  </mine-record> -->
 
 </view>
 
