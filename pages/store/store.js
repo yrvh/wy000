@@ -2,18 +2,22 @@
 Page({
 
   data: {
+    isfixed: false,
+    nav_active: true,
+    img_arr: ["1.jpg","2.jpg","7.jpg","4.jpg","5.jpg","6.jpg"],
+    location_detail: false,
     tabs: [
       {
         id: 0,
-        name: '小店',
+        name: '美食',
         isActive: true,
-        icon: "icon-store-shop"
+        icon: "icon-store-cate"
       },
       {
         id: 1,
-        name: '分类',
+        name: '超市',
         isActive: false,
-        icon: "icon-store-kind"
+        icon: "icon-store-market"
       },
       {
         id: 2,
@@ -29,7 +33,11 @@ Page({
       }
     ]
   },
-
+  handleLocDetail() {
+    this.setData({
+      location_detail: !this.data.location_detail
+    })
+  },
   tabbarChange2(e){   // 通过函数改变默认的激活项
     const {tindex} = e.detail
     let {tabs} = this.data
@@ -39,9 +47,9 @@ Page({
     })
   },
 
-  handleAddRepair() {
+  handleLocDetail() {
     wx.navigateTo({
-      url: '/pages/repair/repairadd/repairadd',
+      url: '/pages/store/address/address',
     })
   },
 
@@ -99,5 +107,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  // 监听滚动
+  onPageScroll(e) {
+    let scroll_top = e.scrollTop
+    if(e.scrollTop>162 && !this.data.isfixed){
+      this.setData({
+        isfixed: true
+      })
+    }
+    if(e.scrollTop<163 && this.data.isfixed){
+      this.setData({
+        isfixed: false
+      })
+    }
   }
 })

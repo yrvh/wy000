@@ -1,0 +1,28 @@
+/* pages/store/address/address.wxss */
+
+.topcss {border-bottom: 1rpx solid #ddd;}
+.searchcss {background-color: #f4f4f4 !important;}
+.city-location {padding-right: 20rpx; display: flex; justify-content: space-between; margin-right: 25rpx; border-right: 1rpx solid #777;}
+.location-name {font-size: 24rpx;}
+.city-location .location-name text{font-size: 24rpx;}
+/* 当前定位 */
+.self-loc { padding: 30rpx;}
+.self-loc .title {font-size: 24rpx; color: #777; margin-bottom: 20rpx;}
+.self-loc .content {display: flex; justify-content: space-between;}
+.self-loc .content .content-self {color: #0081df; font-weight: 600;}
+.self-loc .content .content-again {color: var(--store_color);}
+/* 收货地址 */
+.take-loc {border-top: 16rpx solid #eee; border-bottom: 16rpx solid #eee; padding: 30rpx 0 0 30rpx;}
+.take-loc .title {font-size: 24rpx; color: #777; margin-bottom: 20rpx;}
+.take-loc .content {padding-left: 30rpx;}
+.take-loc .content-community {height: 50rpx;}
+.take-loc .content-community text {font-size: 30rpx; font-weight: 600; margin-right: 20rpx;}
+.tagcss {color: var(--store_color); background-color: #fff5f5; font-size: 22rpx; padding: 0 17rpx !important;}
+.take-loc .content-contact {font-size: 26rpx; color: #999; height: 60rpx;}
+.take-loc .content-add {line-height: 80rpx; border-top: 1rpx solid #eee;display: flex; justify-content: space-between; padding-right: 20rpx;}
+.take-loc .content-add text{color: var(--store_color);}
+.take-loc .content-add .arrows{color: #aaa;}
+/* 附近地址 */
+.nearby-loc { padding: 30rpx;}
+.nearby-loc .title {font-size: 24rpx; color: #777; margin-bottom: 20rpx;}
+.tagcss-near {color: var(--store_color); background-color: #f3f3f3; font-size: 26rpx; padding: 0 17rpx !important; border: none !important;}

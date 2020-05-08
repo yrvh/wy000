@@ -1,0 +1,11 @@
+/* pages/store/add_address/add_address.wxss */
+
+.addbox {padding: 30rpx;}
+.addbox .item {height: 90rpx; border-bottom: 1rpx solid #ddd; display: flex; align-items: center;}
+.addbox .item text {width: 120rpx; font-weight: 600; color: #444; border-right: 2rpx dashed; margin-right: 20rpx;}
+.addbox .item input {flex: 1; font-size: 24rpx;}
+.city-name {font-size: 24rpx;}
+/*从通讯录添加手机号 .addphone-contact {border: 1rpx solid var(--store_color); padding: 5rpx 15rpx; color: var(--store_color); font-size: 24rpx !important; font-weight: 400; background-color: #fff;} */
+.tagcss {border-color: var(--store_color) !important; color: var(--store_color);}
+
+.save-address {width: 80%; background-color: var(--store_color); margin: 0 auto; font-size: 32rpx; line-height: 80rpx; border-radius: 8rpx; text-align: center; color: #fdfdfd;}

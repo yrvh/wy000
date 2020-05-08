@@ -1,0 +1,13 @@
+<!--components/top-search/top-search.wxml-->
+<view class="top topcss">
+  <view class="search searchcss">
+    <slot name="search_shift"/>
+    <text class="search-text iconfont icon-search"></text>
+    <input class="search-input" placeholder="{{placehod}}"></input>
+    <slot name="search_push"/>
+  </view>
+</view>
+
+<!-- 占位 -->
+<view class="place"></view>
+<slot name="the_location" />

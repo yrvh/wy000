@@ -1,15 +1,9 @@
 <!--pages/home/home.wxml-->
 <!-- home页面顶部 -->
-<view class="home-top">
-  <!-- home页面搜索框 -->
-  <view class="home-search">
-    <text class="iconfont icon-home-search"></text>
-    <input placeholder="请输入内容..."></input>
-    <text class="iconfont icon-home-quickmark"></text>
-  </view>
-  <!-- 搜索页占位 -->
-  <view class="home-place"></view>
-</view>
+<top-search placehod="请输入内容..." topcss="topcss">
+  <text slot="search_push" class="iconfont icon-quickmark"></text>
+</top-search>
+
 
 <!-- home页面的搜索常用词 -->
 <view class="home-hotword"></view>
@@ -31,7 +25,7 @@
           easing-function="linear">
     <block wx:for="{{img_arr}}" wx:key="index">
       <swiper-item item-id="index">
-        <image class="img-item" src="/assets/swipers/{{item}}"></image>
+        <image src="/assets/swipers/{{item}}"></image>
       </swiper-item>
     </block>
   </swiper>

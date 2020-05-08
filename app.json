@@ -13,7 +13,9 @@
     "pages/carry/carry",
     "pages/flea/flea",
     "pages/decorate/decorate",
-    "pages/rent/rentdetail/rentdetail"
+    "pages/rent/rentdetail/rentdetail",
+    "pages/store/address/address",
+    "pages/store/add_address/add_address"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39B54A",
@@ -69,6 +71,7 @@
     "nav-icon": "/components/nav-icon/nav-icon",
     "show-detail": "/components/show-detail/show-detail",
     "custom-tabbar": "/components/custom-tabbar/custom-tabbar",
-    "c-tag": "/components/c-tag/c-tag"
+    "c-tag": "/components/c-tag/c-tag",
+    "top-search": "/components/top-search/top-search"
   }
 }

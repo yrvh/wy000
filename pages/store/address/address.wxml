@@ -1,0 +1,46 @@
+<!--pages/store/address/address.wxml-->
+<top-search placehod="搜小区 等..." topcss="topcss" searchcss="searchcss">
+      <view slot="search_shift" class="city-location">
+        <picker class="location-name" mode="region" bindchange="handleChangeCity">
+          {{cityloc}}
+          <text class="iconfont {{location_detail? 'icon-right':'icon-down'}}"></text>
+        </picker>
+        
+      </view>
+</top-search>
+
+<!-- 当前位置 -->
+<view class="self-loc">
+  <view class="title">当前定位</view>
+  <view class="content">
+    <text class="content-self iconfont icon-location" bindtap="handleSelectLoc">{{communityloc}}</text>
+    <text class="content-again" bindtap="handleLocation">重新定位</text>
+  </view>
+</view>
+
+<!-- 收货地址列表 -->
+<view class="take-loc">
+  <view class="title">收货地址</view>
+  <view class="content">
+    <view class="content-community" bindtap="handleSelectLoc">
+      <text>{{communityloc}} ({{cityloc}})</text>
+      <c-tag name="家" tagcss="tagcss"></c-tag>
+    </view>
+    <view class="content-contact">{{'张三'}} ({{'先生'}}) {{'15367890000'}}</view>
+    <view class="content-add" bindtap="handleAdd">
+      <text>+新增地址</text>
+      <text class="arrows iconfont icon-right"></text>
+    </view>
+  </view>
+</view>
+<!-- 附近地址 -->
+<view class="nearby-loc">
+  <view class="title">附近地址</view>
+  <view class="content">
+    <c-tag name="文邦国际城" tagcss="tagcss-near" bindtap="handleSelectLoc"></c-tag>
+    <c-tag name="大润发" tagcss="tagcss-near" bindtap="handleSelectLoc"></c-tag>
+    <c-tag name="和安商港" tagcss="tagcss-near" bindtap="handleSelectLoc"></c-tag>
+    <c-tag name="第五街" tagcss="tagcss-near" bindtap="handleSelectLoc"></c-tag>
+  </view>
+</view>
+

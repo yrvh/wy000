@@ -14,7 +14,7 @@
         </view>
         <view class="info-location">
           {{item.location}}
-          <text class="iconfont icon-dynamic-location"></text>
+          <text class="iconfont icon-location"></text>
         </view>
       </view>
       <view class="date">{{item.date}}</view>

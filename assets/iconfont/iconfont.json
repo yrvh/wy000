@@ -6,6 +6,48 @@
   "description": "这是我的社区物业项目的 图标",
   "glyphs": [
     {
+      "icon_id": "10707234",
+      "name": "箭头 下 down",
+      "font_class": "jiantouxia",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "10707252",
+      "name": "箭头 右 right",
+      "font_class": "jiantouyou",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "6265239",
+      "name": "定位-实色",
+      "font_class": "loc-s",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "9559079",
+      "name": "定位",
+      "font_class": "ziyuan1",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "10387914",
+      "name": "火锅",
+      "font_class": "huoguo1",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "5293984",
+      "name": "火锅",
+      "font_class": "huoguo",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
       "icon_id": "386287",
       "name": "设置",
       "font_class": "shezhi",

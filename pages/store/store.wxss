@@ -1,6 +1,53 @@
 /* pages/store/store.wxss */
+page {background-color: #fafafa; padding-bottom: 9vh;}
 
 /* 页面的tabbar样式 */
 .cst-tabbar2 {background-color: rgba(230, 230, 230, 0.9) !important;}
 .act-img2 {color:var(--store_color) !important;}
 .act-text2 {color:var(--store_color) !important;}
+
+/* 顶部 */
+.topcss {background-color: var(--store_color);} 
+.self-location {line-height: 50rpx; background-color: var(--store_color); color: #fff; padding: 0 50rpx; display: flex; justify-content: flex-end;}
+.location-name {display: inline-block; padding: 0 12rpx 0 4rpx;}
+
+/* 热词 */
+.store-hotword { width: 100%; height: 120rpx; background-color: var(--store_color); border-bottom-left-radius: 50% 20rpx; border-bottom-right-radius: 50% 20rpx;}
+/* 美食页面的轮播图 */
+.store-swipers {height: 230rpx; width: 86%; border-radius: 14rpx; position: relative; margin: -120rpx auto 0; box-shadow: 0 6rpx 10rpx 0 #999;}
+.store-swipers image { height: 230rpx; width: 100%; border-radius: 14rpx; overflow: hidden;}
+.swipers {height: 100%;border-radius: 14rpx; overflow: hidden;}
+
+
+.nav-container {width: 750rpx; margin: 46rpx 0 15rpx; padding: 0 10rpx; background-color: #fff;}
+.is-fixed {position: fixed; top: 35rpx; z-index: 20;}
+.nav-container-place {height: 165rpx;}
+/* 美食页面的筛选 */
+.store-select {height: 40rpx; margin-bottom: 14rpx; display: flex; justify-content: space-between; border-bottom: 1rpx solid #ddd; color: #555;}
+/* 美食页面导航 */
+.store-nav {display: flex; justify-content: space-between; background-color: cornsilk;}
+.store-nav>view {height: 60rpx; text-align: center; font-size: 30rpx; color: #333;}
+.nav-active {color: var(--store_color) !important; font-weight: 600; display: flex; flex-direction: column; justify-content: space-between;}
+.nav-active>view {width: 50%; height: 10rpx; border-radius: 5rpx; background-color: var(--store_color); position: relative; transform: translate(50%);}
+
+
+/* 美食页面的内容 */
+.store-content {padding: 0 10rpx;}
+
+.store-listbox {display: flex; padding-top: 14rpx;}
+.listbox-img image {background-color: #cfa; width: 120rpx; height: 120rpx; border-radius: 6%; position: relative; transform: translateY(7rpx);}
+.listbox-content {flex: 1; padding-left: 10rpx; border-bottom: 1rpx solid #aaa;}
+.listbox-title {font-size: 30rpx; font-weight: 700;}
+.listbox-amount {font-size: 22rpx; color: #777; margin: 5rpx 0;}
+.listbox-min {font-size: 22rpx; color: #777;}
+.listbox-discounts {display: flex; margin: 8rpx 0 20rpx;}
+.listbox-discounts text {font-size: 22rpx; color: var(--store_color); border: 0.1rpx solid var(--store_color); padding:5rpx; margin-right: 16rpx;}
+
+.listbox-recommend {padding-bottom: 14rpx; display: flex; justify-content: space-between;} 
+.recommend-box {width: 180rpx; margin-right: 24rpx;}
+.recommend-box image {width: 180rpx; height: 180rpx; background-color: #8df; border-radius: 6%;}
+.recommend-box .dishes {}
+.recommend-box .price {color: #e42;}
+
+
+

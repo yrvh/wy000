@@ -18,11 +18,11 @@
         <view class="dialog-title">整租 | 大都金沙湾</view>
         <view class="dialog-size">70m2 | 南北通透 | 2室1厅</view>
         <view class="dialog-tag">
-        <c-tag name="海景" fontcolor='#0081df'></c-tag>
-        <c-tag name="精装修" fontcolor='#0081df'></c-tag>
-        <c-tag name="有电梯" fontcolor='#0081df'></c-tag>
-        <c-tag name="有阳台" fontcolor='#0081df'></c-tag>
-        <c-tag name="押一付一" fontcolor='#0081df'></c-tag>
+        <c-tag tagcss="tagcss" name="海景"></c-tag>
+        <c-tag tagcss="tagcss" name="精装修"></c-tag>
+        <c-tag tagcss="tagcss" name="有电梯"></c-tag>
+        <c-tag tagcss="tagcss" name="有阳台"></c-tag>
+        <c-tag tagcss="tagcss" name="押一付一"></c-tag>
         </view>
         <view class="dialog-price">1200元/月</view>
       </view>

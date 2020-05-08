@@ -3,18 +3,121 @@
 <!-- 引入自定义的tabbar -->
 <custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
 
-  <!-- 小店页面 -->
+  <!-- 美食页面 -->
   <block wx:if="{{tabs[0].isActive}}">
-    <view>定位,搜索框</view>
-    <view>轮播图</view>
-    <view>全部,美食,奶茶,买百货,买菜,买水果</view>
-    <view></view>
-    <view>搜索框</view>
+    <top-search placehod="搜美食..." topcss="topcss">
+      <view slot="the_location" class="self-location">
+        <text class="iconfont icon-location"></text>
+        <text class="location-name" bindtap="handleLocDetail">东方之珠</text>
+        <text class="iconfont {{location_detail? 'icon-right':'icon-down'}}"></text>
+      </view>
+    </top-search>
+
+    <view class="store-hotword"></view>
+    <!-- 美食页面的轮播图 -->
+    <view class="store-swipers">
+      <swiper class="swipers"
+              indicator-dots 
+              indicator-color="rgba(230,230,230,0.2)"
+              indicator-active-color="rgba(0,0,0,0.6)"
+              autoplay
+              interval="{{4000}}"
+              duration="{{600}}"
+              circular
+              easing-function="linear">
+        <block wx:for="{{img_arr}}" wx:key="index">
+          <swiper-item item-id="index">
+            <image src="/assets/swipers/{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+
+    <!-- 美食页面的中部导航 -->
+    <view  class="nav-container {{isfixed? 'is-fixed':''}}">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+      <view class="store-nav">
+        <view class="{{nav_active? 'nav-active':''}}">
+          全部
+          <view></view>
+        </view>
+        <view class="">
+          火锅
+          <view></view>
+        </view>
+        <view class="">
+          炸鸡烤串
+          <view></view>
+        </view>
+        <view class="">
+          特色炒菜
+          <view></view>
+        </view>
+        <view class="">
+          烧烤烤肉
+          <view></view>
+        </view>
+        <view class="">
+          汉堡披萨
+          <view></view>
+        </view>
+        <view class="">
+          面食粥点
+          <view></view>
+        </view>
+        <view class="">
+          麻辣烫
+          <view></view>
+        </view>
+        <view class="">
+          烧腊饭
+          <view></view>
+        </view>
+        <view class="">
+          奶茶果汁
+          <view></view>
+        </view>
+      </view>
+    </view>
+    <view class="nav-container-place" hidden="{{!isfixed}}"></view>
+    <!-- 美食页面的内容部分 -->
+    <view class="store-content">
+      <view class="store-listbox" wx:for="{{6}}" wx:key="inkdex">
+        <view class="listbox-img">
+          <image></image>
+        </view>
+        <view class="listbox-content">
+          <view class="listbox-title">重庆川菜馆</view>
+          <view class="listbox-amount">*4.5 月售2000</view>
+          <view class="listbox-min">起送$16</view>
+          <view class="listbox-discounts">
+            <text>30减12</text>
+            <text>80减26</text>
+            <text>120减39</text>
+            <text>150减50</text>
+          </view>
+          <view class="listbox-recommend">
+            <view class="recommend-box" wx:for="{{8}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+              <image>{{index2}}</image>
+              <view class="dishes">水煮鱼</view>
+              <view class="price">$ 49.8 $59</view>
+            </view>
+          
+          </view>
+        </view>
+      </view>
+    </view>
   </block>
 
-  <!-- 分类页面 -->
+  <!-- 超市页面 -->
   <block wx:if="{{tabs[1].isActive}}">
-    <view>分类页面</view>
+    <view>超市页面</view>
   </block>
 
   <!-- 购物车页面 -->

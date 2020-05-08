@@ -1,0 +1,38 @@
+<!--pages/store/add_address/add_address.wxml-->
+<view class="addbox">
+  <view class="item addbox-address">
+    <text>地址</text>
+    <input placeholder="街道/小区/写字楼/学校 ...."></input>
+  </view>
+  <view class="item addbox-city">
+    <text>城市</text>
+    <picker class="city-name" mode="region" bindchange="handleChangeCity">
+      {{forminfo.cityloc}}
+      <text class="iconfont {{location_detail? 'icon-right':'icon-down'}}"></text>
+    </picker>
+  </view>
+  <view class="item addbox-housenum">
+    <text>门牌号</text>
+    <input placeholder="详细地址: 例: 3栋4单元506"></input>
+  </view>
+  <view class="item addbox-contact">
+    <text>联系人</text>
+    <input placeholder="收货人"></input>
+    <c-tag name="先生" tagcss="{{forminfo.gender? 'tagcss':''}}" bindtap="handleGender" data-gender="{{true}}"></c-tag>
+    <c-tag name="女士" tagcss="{{forminfo.gender? '':'tagcss'}}" bindtap="handleGender" data-gender="{{false}}"></c-tag>
+  </view>
+  <view class="item addbox-tel">
+    <text>手机号</text>
+    <input placeholder="收货人电话" value="{{forminfo.phone}}"></input>
+    <!-- <button class="addphone-contact" size="mini" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">从通讯录+</button> -->
+  </view>
+  <view class="item addbox-">
+    <text>标签</text>
+    <c-tag name="小区" tagcss="{{forminfo.tag=='小区'? 'tagcss':''}}" bindtap="handleTag" data-tag="{{'小区'}}"></c-tag>
+    <c-tag name="单位" tagcss="{{forminfo.tag=='单位'? 'tagcss':''}}" bindtap="handleTag" data-tag="{{'单位'}}"></c-tag>
+    <c-tag name="学校" tagcss="{{forminfo.tag=='学校'? 'tagcss':''}}" bindtap="handleTag" data-tag="{{'学校'}}"></c-tag>
+    <c-tag name="临时" tagcss="{{forminfo.tag=='临时'? 'tagcss':''}}" bindtap="handleTag" data-tag="{{'临时'}}"></c-tag>
+    <c-tag name="其他" tagcss="{{forminfo.tag=='其他'? 'tagcss':''}}" bindtap="handleTag" data-tag="{{'其他'}}"></c-tag>
+  </view>
+</view>
+<view class="save-address" bindtap="handleSave">保存地址</view>

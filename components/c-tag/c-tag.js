@@ -4,12 +4,9 @@ Component({
     name: {
       type: String,
       value: ""
-    },
-    fontcolor: {
-      type: String,
-      value: '#111'
     }
   },
+  externalClasses: ['tagcss'],
   /**
    * 组件的初始数据
    */

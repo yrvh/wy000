@@ -139,6 +139,20 @@
 					"pathName": "pages/mine/mine",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "选择收货地址5.1",
+					"pathName": "pages/store/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增收货地址",
+					"pathName": "pages/store/add_address/add_address",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

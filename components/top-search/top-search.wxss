@@ -1,0 +1,8 @@
+/* components/top-search/top-search.wxss */
+@import '/assets/iconfont/iconfont.wxss';
+
+.top {width: 750rpx; position: fixed; z-index: 8; padding-bottom: 20rpx;}
+.search {width: 650rpx; height: 60rpx; background-color: #fff; margin: 0 auto; border-radius: 14rpx; display: flex; justify-content: space-between; align-items: center; padding:0 20rpx;}
+.search-text {font-size: 38rpx; color: #666;}
+.search-input {flex: 2; margin: 0 20rpx;}
+.place {height: 80rpx;}
