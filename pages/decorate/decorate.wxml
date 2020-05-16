@@ -5,16 +5,20 @@
 
   <view class="v2css">该功能将在 版本2.0发布!~</view>
 
-  <!-- 装修预订页面 -->
+  <!-- 生鲜首页 -->
   <block wx:if="{{tabs[0].isActive}}">
   </block>
 
-  <!-- 装修材料 -->
+  <!-- 分类 -->
   <block wx:if="{{tabs[1].isActive}}">
   </block>
 
-  <!-- 我的装修 -->
+  <!-- 购物车 -->
   <block wx:if="{{tabs[2].isActive}}">
+  </block>
+
+  <!-- 我的 -->
+  <block wx:if="{{tabs[3].isActive}}">
   </block>
   
 </custom-tabbar>

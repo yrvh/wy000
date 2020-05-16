@@ -1,24 +1,64 @@
 <!--pages/carry/carry.wxml-->
 
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
 <!-- 引入自定义的tabbar -->
 <custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
 
-  <!-- 上沙石页面 -->
+  <!-- 砂石陶粒页面 -->
   <block wx:if="{{tabs[0].isActive}}">
-    <view>沙石,水泥,瓷砖  V2.0 发布该功能</view>
+    <view class="carrybox" wx:for="{{commodity_arr}}" wx:key="index">
+      <view class="carry-merchant">{{item.merchant_name}}</view>
+      <view class="carry-commodity">
+        <view class="carry-checkbox">
+          <label class="carry-label">
+            <checkbox value="{{item.id}}" checked="{{item.commodity_slct}}" bindtap="handleCheckbox" data-index="{{index}}"></checkbox>
+          </label>
+        </view>
+        <image class="commodity-img" src="{{fStr.formatStr('swipers',item.img)}}"></image>
+        <view class="commodity-content">
+          <view class="name">{{item.name}}</view>
+          <view class="type">
+            型号:
+            <c-tag wx:for="{{item.type}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2" name="{{item2.typename}}" tagcss="{{item2.selected? 'active-tagcss':'tagcss'}}" bindtap="handleChangeType" data-index="{{index}}" data-index2="{{index2}}"/>
+          </view>
+          <view class="price">
+            <text>¥ {{item.price}}</text>
+            <input-number num_value="{{item.num}}" bind:changeNum="handleChangeNum" data-index="{{index}}"/>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="carry-bottom">
+      <label class="carry-bottom-label" bindtap="handleAllCheckbox">
+        <checkbox value="all" checked="{{all_checkbox}}"></checkbox>
+        全选
+      </label>
+      <view class="carry-bottom-message">
+        <text class="message-icon iconfont icon-carry-message"></text>
+        <text>咨询</text>
+      </view>
+      <view class="carry-bottom-btn">
+        <view class="carry-order">加入订单</view>
+        <view class="carry-settlement">立即结算</view>
+      </view>
+    </view>
+
   </block>
 
-  <!-- 下垃圾页面 -->
+  <!-- 搬运工人页面 -->
   <block wx:if="{{tabs[1].isActive}}">
     <view>下垃圾 V2.0 发布该功能</view>
   </block>
 
-  <!-- 找家政页面 -->
+  <!-- 家政保洁页面 -->
   <block wx:if="{{tabs[2].isActive}}">
     <view>家政 V2.0 发布该功能</view>
   </block>
 
-  <!-- 搬运记录页面 -->
+  <!-- 我的订单页面 -->
   <block wx:if="{{tabs[3].isActive}}">
     <view>我的记录 V2.0 发布该功能</view>
   </block>

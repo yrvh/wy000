@@ -1,0 +1,6 @@
+<!--components/inputNumber/inputNumber.wxml-->
+<view class="input-box">
+  <view class="input-btn" bindtap="inputChange" data-num="{{-1}}">-</view>
+  <input class="input-num" value="{{num_value}}"></input>
+  <view class="input-btn" bindtap="inputChange" data-num="{{1}}">+</view>
+</view>

@@ -1,5 +1,9 @@
 <!--pages/home/home.wxml-->
 <!-- home页面顶部 -->
+
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
 <top-search placehod="请输入内容..." topcss="topcss">
   <text slot="search_push" class="iconfont icon-quickmark"></text>
 </top-search>
@@ -11,7 +15,7 @@
 <!-- home页面的轮播图 -->
 <view class="home-swipers">
   <view class="home-weather">
-    <view>北海,天气,晴天</view>
+    <view>广东,天气,晴天</view>
     <view>东方之珠小区</view>
   </view>
   <swiper class="swipers"
@@ -41,9 +45,9 @@
 </view>
 <view class="home-nav home-nav2">
   <nav-icon title="楼下小店" img-icon="img-store iconfont icon-home-store" page_url="store"/>
+  <nav-icon title="超市生鲜" img-icon="img-decorate iconfont icon-home-decorate" page_url="decorate"/>
   <nav-icon title="搬运家政" img-icon="img-carry iconfont icon-home-carry" page_url="carry"/>
   <nav-icon title="变废为宝" img-icon="img-flea iconfont icon-home-flea" page_url="flea"/>
-  <nav-icon title="雕梁画栋" img-icon="img-decorate iconfont icon-home-decorate" page_url="decorate"/>
 </view>
 
 <!-- home页面的内容 -->
@@ -56,60 +60,35 @@
       <view> 这是头条内容7...</view>
     </view>
   </home-detail>
-  <home-detail title="装修搬运">
-    <view>
-      <view> 这是装修搬运1...</view>
-      <view> 这是装修搬运3...</view>
-      <view> 这是装修搬运5...</view>
-      <view> 这是装修搬运7...</view>
+</view>
+
+<!-- 小店的列表 -->
+<view class="store-content">
+  <view class="store-listbox" wx:for="{{list_arr}}" wx:key="index">
+    <view class="listbox-img">
+      <image src="{{fStr.formatStr('swipers',item.ava)}}"></image>
     </view>
-  </home-detail>
-  <home-detail title="投诉建议">
-    <view>
-      <view> 这是投诉建议1...</view>
-      <view> 这是投诉建议3...</view>
-      <view> 这是投诉建议5...</view>
-      <view> 这是投诉建议7...</view>
+    <view class="listbox-content">
+      <view class="listbox-name">{{item.name}}</view>
+      <view class="listbox-amount">
+        <text class="listbox-amount-grade">评{{item.grade}}</text>
+        <text class="listbox-amount-text">月售 ¥{{item.amount}}</text>
+      </view>
+      <view class="listbox-sendmin">起送 ¥{{item.sendmin}}</view>
+      <view class="listbox-discounts">
+        <c-tag wx:for="{{item.discounts}}" wx:for-item="itemdis" wx:for-index="indexdis" wx:key="indexdis" name="{{itemdis}}" tagcss="tagcss"></c-tag>
+      </view>
+      <scroll-view class="listbox-recommend" scroll-x enable-flex scroll-with-animation>
+        <view class="recommend-box"  id="index2" wx:for="{{item.recommend}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+          <image src="{{fStr.formatStr('swipers',item2.img)}}"></image>
+          <view class="dishes">{{item2.name}}</view>
+          <view class="price">
+            <text class="new_price">¥{{item2.new_price}}</text>
+            <text class="old_price">¥{{item2.old_price}}</text>
+          </view>
+        </view>
+      
+      </scroll-view>
     </view>
-  </home-detail>
-  <home-detail title="出租托管">
-    <view>
-      <view> 这是出租托管1...</view>
-      <view> 这是出租托管3...</view>
-      <view> 这是出租托管5...</view>
-      <view> 这是出租托管7...</view>
-    </view>
-  </home-detail>
-  <home-detail title="业主委会">
-    <view>
-      <view> 这是业主委会1...</view>
-      <view> 这是业主委会3...</view>
-      <view> 这是业主委会5...</view>
-      <view> 这是业主委会7...</view>
-    </view>
-  </home-detail>
-  <home-detail title="业主认证">
-    <view>
-      <view> 这是业主认证1...</view>
-      <view> 这是业主认证3...</view>
-      <view> 这是业主认证5...</view>
-      <view> 这是业主认证7...</view>
-    </view>
-  </home-detail>
-  <home-detail title="小区电话">
-    <view>
-      <view> 这是小区电话1...</view>
-      <view> 这是小区电话3...</view>
-      <view> 这是小区电话5...</view>
-      <view> 这是小区电话7...</view>
-    </view>
-  </home-detail>
-  <home-detail title="物业介绍" border1="border1">
-    <view>
-      <view> 这是物业介绍1...</view>
-      <view> 这是物业介绍3...</view>
-      <view> 这是物业介绍5...</view>
-      <view> 这是物业介绍7...</view>
-    </view>
-  </home-detail>
+  </view>
 </view>

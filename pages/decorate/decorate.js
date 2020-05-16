@@ -8,19 +8,25 @@ Page({
     tabs: [
       {
         id: 0,
-        name: '装修预定',
+        name: '首页',
         isActive: true,
         icon: "icon-decorate-add"
       },
       {
         id: 1,
-        name: '装修材料',
+        name: '分类',
         isActive: false,
         icon: "icon-decorate-materials"
       },
       {
         id: 2,
-        name: '我的装修',
+        name: '购物车',
+        isActive: false,
+        icon: "icon-decorate-mine"
+      },
+      {
+        id: 3,
+        name: '我的',
         isActive: false,
         icon: "icon-decorate-mine"
       }

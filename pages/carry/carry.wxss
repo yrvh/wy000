@@ -1,6 +1,29 @@
 /* pages/carry/carry.wxss */
+page {background-color: #fff; padding-bottom: 17vh;}
 
 /* 页面的tabbar样式 */
 .cst-tabbar2 {background-color: rgba(230, 230, 230, 0.9) !important;}
 .act-img2 {color:var(--carry_color) !important;}
 .act-text2 {color:var(--carry_color) !important;}
+
+/* 商品盒子 */
+.carrybox {border-bottom: 5rpx solid #ddd; padding: 20rpx;}
+.carry-merchant {font-size: 30rpx; font-weight: 600; margin-bottom: 25rpx;}
+.carry-commodity {display: flex; justify-content: space-between;}
+.carry-checkbox {height: 180rpx; display: flex; align-items: center;}
+.commodity-img {width: 180rpx; height: 180rpx;}
+.commodity-content {flex: 1; padding-left: 20rpx;}
+.commodity-content .name {font-weight: 700; margin-bottom: 15rpx;}
+.tagcss {margin-bottom: 8rpx; font-size: 24rpx;}
+.active-tagcss {margin-bottom: 8rpx; font-size: 24rpx; border-color: var(--carry_color) !important;}
+.commodity-content .price {margin-top: 15rpx; display: flex; justify-content: space-between;}
+.commodity-content .price text {color: #f44; font-size: 32rpx; font-weight: 600;}
+
+/* 底部固定位置的功能按钮 */
+.carry-bottom {width: 750rpx; height: 7vh; position: fixed; top: 84vh; background-color: #eee; display: flex; justify-content: space-between; align-items: center; border-top: 1rpx solid #999; padding: 0 20rpx; z-index: 8;}
+.carry-bottom-message {display: flex; align-items: center;}
+.carry-bottom-message .message-icon {text-align: center; font-size: 60rpx; color: var(--carry_color); margin-right: 7rpx;}
+/* .carry-bottom-message text {font-size: 22rpx;} */
+.carry-bottom-btn {}
+.carry-bottom-btn view{display: inline-block; width: 180rpx;  border-radius: 12rpx; background-color: var(--carry_color); text-align: center; color: #fff; font-size: 34rpx; line-height: 74rpx;}
+.carry-order {margin-right: 20rpx;}

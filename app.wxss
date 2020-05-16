@@ -1,7 +1,7 @@
 @import '/assets/iconfont/iconfont.wxss';
 
 /* 设置页面初始化样式 */
-page,view,text,text,swiper,swiper-item,image,navigator {font-size: 28rpx; margin: 0; padding: 0;box-sizing: border-box;}
+page,view,text,text,swiper,swiper-item,image,navigator,input {font-size: 28rpx; margin: 0; padding: 0;box-sizing: border-box;}
 
 /* 定义主题颜色 */
 page {--home_color: #39b54a;}

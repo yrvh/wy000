@@ -4,7 +4,7 @@
   "navigationBarTitleText": "搬运家政",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
-  "enablePullDownRefresh": true,
+  "enablePullDownRefresh": false,
   "onReachBottomDistance": 30,
   "usingComponents": {}
 }

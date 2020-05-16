@@ -14,7 +14,7 @@
   <view class="title">当前定位</view>
   <view class="content">
     <text class="content-self iconfont icon-location" bindtap="handleSelectLoc">{{communityloc}}</text>
-    <text class="content-again" bindtap="handleLocation">重新定位</text>
+    <text class="content-again" catch:tap="handleLocation">重新定位</text>
   </view>
 </view>
 
@@ -26,7 +26,7 @@
       <text>{{communityloc}} ({{cityloc}})</text>
       <c-tag name="家" tagcss="tagcss"></c-tag>
     </view>
-    <view class="content-contact">{{'张三'}} ({{'先生'}}) {{'15367890000'}}</view>
+    <view class="content-contact">{{'李四'}} ({{'先生'}}) {{'15367890000'}}</view>
     <view class="content-add" bindtap="handleAdd">
       <text>+新增地址</text>
       <text class="arrows iconfont icon-right"></text>

@@ -1,0 +1,4 @@
+/* components/inputNumber/inputNumber.wxss */
+.input-box {border: 1rpx solid #ddd; border-radius: 4rpx; display: flex; justify-content: space-between; align-items: center;}
+.input-btn {width: 60rpx; text-align: center; font-size: 40rpx; cursor: pointer;}
+.input-num { height: 50rpx; width: 100rpx; border-left: 1rpx solid #ddd; border-right: 1rpx solid #ddd; text-align: center; font-size: 30rpx;}

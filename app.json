@@ -72,6 +72,7 @@
     "show-detail": "/components/show-detail/show-detail",
     "custom-tabbar": "/components/custom-tabbar/custom-tabbar",
     "c-tag": "/components/c-tag/c-tag",
-    "top-search": "/components/top-search/top-search"
+    "top-search": "/components/top-search/top-search",
+    "input-number": "/components/inputNumber/inputNumber"
   }
 }

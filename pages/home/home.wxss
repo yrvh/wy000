@@ -7,7 +7,7 @@
 /* home页面轮播图样式 */
 .home-swipers {height: 400rpx; width: 90%; border-radius: 14rpx; position: relative; margin: -140rpx auto 0; box-shadow: 0 6rpx 10rpx 0 #999;}
 .home-swipers image { height: 400rpx; width: 100%; border-radius: 14rpx; overflow: hidden;}
-.swipers {height: 100%;border-radius: 14rpx; overflow: hidden;}
+.swipers {height: 100%; border-radius: 14rpx; overflow: hidden;}
 
 .home-weather {box-sizing: border-box; width: 100%; height: 48rpx; position: absolute; background-color: rgba(50, 50, 150, .1); line-height: 48rpx; color: #eee; padding: 0 30rpx; border-top-left-radius: 14rpx; border-top-right-radius: 14rpx; z-index: 7;}
 .home-weather :first-child { float: left;}
@@ -28,5 +28,28 @@
 .img-flea {background: linear-gradient(45deg, #0061bf,#0081df,#30b1ff);}
 .img-decorate {background: linear-gradient(45deg,#b5774f,#d5976f,#f5b78f);}
 
+/* 小区头条 */
 .home-content {padding: 0 20rpx;}
 .border1 {border-bottom: none !important;}
+
+
+/* 店铺列表的内容 */
+.store-content {padding: 0 10rpx;}
+
+.store-listbox {display: flex; padding-top: 14rpx;}
+.listbox-img image {background-color: #cfa; width: 120rpx; height: 120rpx; border-radius: 6%; position: relative; transform: translateY(7rpx);}
+.listbox-content {flex: 1; padding-left: 10rpx; border-bottom: 1rpx solid #ddd;}
+.listbox-name {font-size: 30rpx; font-weight: 700;}
+.listbox-amount {margin: 5rpx 0;}
+.listbox-amount-text{font-size: 22rpx; color: #777;}
+.listbox-amount-grade {font-family: fangsong; margin-right: 20rpx; color: #f44;}
+.listbox-sendmin {font-size: 22rpx; color: #777;}
+.listbox-discounts {display: flex; margin: 8rpx 0 20rpx;}
+.listbox-discounts .tagcss {font-size: 22rpx; color: var(--store_color); border-color: var(--store_color) !important; padding: 0 10rpx !important;}
+
+.listbox-recommend {width: 610rpx; padding-bottom: 14rpx; overflow: hidden; white-space: nowrap;} 
+.recommend-box {display: inline-block; width: 180rpx; margin-right: 24rpx;}
+.recommend-box image {width: 180rpx; height: 180rpx; background-color: #8df; border-radius: 6%;}
+.recommend-box .dishes {margin: 10rpx 0;}
+.recommend-box .new_price {font-size: 28rpx; color: #e42; margin-right: 14rpx;}
+.recommend-box .old_price {font-size: 22rpx; color: #999; text-decoration: line-through;}

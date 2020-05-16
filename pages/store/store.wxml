@@ -1,5 +1,8 @@
 <!--pages/store/store.wxml-->
 
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
 <!-- 引入自定义的tabbar -->
 <custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
 
@@ -35,81 +38,70 @@
 
 
     <!-- 美食页面的中部导航 -->
-    <view  class="nav-container {{isfixed? 'is-fixed':''}}">
+    <view  class="nav-container">
       <view class="store-select">
         <text>综合排序></text>
         <text>距离</text>
         <text>销量</text>
         <text>筛选</text>
       </view>
-      <view class="store-nav">
-        <view class="{{nav_active? 'nav-active':''}}">
-          全部
-          <view></view>
+
+      <scroll-view class="store-nav" scroll-x enable-flex scroll-with-animation>
+        <view wx:for="{{nav_arr}}" id="item.id" wx:key="id" class="nav-item {{item.isActive? 'nav-active':''}}" bindtap="handleNavChange" data-index="{{index}}">
+          <image class="nav-item-img" src="{{fStr.formatStr('swipers',item.icon)}}"></image>
+          <text class="nav-item-title">{{item.title}}</text>
+          <view class="nav-item-underline"></view>
         </view>
-        <view class="">
-          火锅
-          <view></view>
-        </view>
-        <view class="">
-          炸鸡烤串
-          <view></view>
-        </view>
-        <view class="">
-          特色炒菜
-          <view></view>
-        </view>
-        <view class="">
-          烧烤烤肉
-          <view></view>
-        </view>
-        <view class="">
-          汉堡披萨
-          <view></view>
-        </view>
-        <view class="">
-          面食粥点
-          <view></view>
-        </view>
-        <view class="">
-          麻辣烫
-          <view></view>
-        </view>
-        <view class="">
-          烧腊饭
-          <view></view>
-        </view>
-        <view class="">
-          奶茶果汁
-          <view></view>
-        </view>
-      </view>
+        
+      </scroll-view>
     </view>
-    <view class="nav-container-place" hidden="{{!isfixed}}"></view>
+    <!-- 中部导航 固定定位,替换区域 -->
+    <view class="nav-container-place" hidden="{{is_hidden}}">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+
+      <scroll-view class="store-nav" scroll-x enable-flex scroll-with-animation>
+        <view wx:for="{{nav_arr}}" id="item.id" wx:key="id" class="nav-item {{item.isActive? 'nav-active':''}}" bindtap="handleNavChange" data-index="{{index}}">
+          <image class="nav-item-img" src="{{fStr.formatStr('swipers',item.icon)}}"></image>
+          <text class="nav-item-title">{{item.title}}</text>
+          <view class="nav-item-underline"></view>
+        </view>
+        
+      </scroll-view>
+    </view>
+   
+   
     <!-- 美食页面的内容部分 -->
     <view class="store-content">
-      <view class="store-listbox" wx:for="{{6}}" wx:key="inkdex">
+      <view class="store-listbox" wx:for="{{list_arr}}" wx:key="index">
         <view class="listbox-img">
-          <image></image>
+          <image src="{{fStr.formatStr('swipers',item.ava)}}"></image>
         </view>
         <view class="listbox-content">
-          <view class="listbox-title">重庆川菜馆</view>
-          <view class="listbox-amount">*4.5 月售2000</view>
-          <view class="listbox-min">起送$16</view>
-          <view class="listbox-discounts">
-            <text>30减12</text>
-            <text>80减26</text>
-            <text>120减39</text>
-            <text>150减50</text>
+          <view class="listbox-name">{{item.name}}</view>
+          <view class="listbox-amount">
+            <text class="listbox-amount-grade">评{{item.grade}}</text>
+            <text class="listbox-amount-text">月售 ¥{{item.amount}}</text>
           </view>
-          <view class="listbox-recommend">
-            <view class="recommend-box" wx:for="{{8}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
-              <image>{{index2}}</image>
-              <view class="dishes">水煮鱼</view>
-              <view class="price">$ 49.8 $59</view>
+          <view class="listbox-sendmin">起送 ¥{{item.sendmin}}</view>
+          <view class="listbox-discounts">
+            <c-tag wx:for="{{item.discounts}}" wx:for-item="itemdis" wx:for-index="indexdis" wx:key="indexdis" name="{{itemdis}}" tagcss="tagcss"></c-tag>
+          </view>
+          <scroll-view class="listbox-recommend" scroll-x enable-flex scroll-with-animation>
+            <view class="recommend-box"  id="index2" wx:for="{{item.recommend}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+              <image src="{{fStr.formatStr('swipers',item2.img)}}"></image>
+              <view class="dishes">{{item2.name}}</view>
+              <view class="price">
+                <text class="new_price">¥{{item2.new_price}}</text>
+                <text class="old_price">¥{{item2.old_price}}</text>
+              </view>
             </view>
           
-          </view>
+          </scroll-view>
         </view>
       </view>
     </view>

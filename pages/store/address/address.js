@@ -30,14 +30,16 @@ Page({
   },
   // 重新定位
   handleLocation() {
-    wx.getLocation({
-      type: 'wgs84',
-      isHighAccuracy: true,
-      highAccuracyExpireTime: 3000,
-      success(res) {
-        console.log(res)
-      }
-    })
+    // wx.getLocation({
+    //   type: 'wgs84',
+    //   isHighAccuracy: true,
+    //   highAccuracyExpireTime: 3000,
+    //   success(res) {
+    //     console.log(res)
+    //     const lat = res.latitude
+    //     const long = res.longitude
+    //   }
+    // })
   },
 
   /**
