@@ -44,10 +44,12 @@
   <nav-icon title="车位门禁" img-icon="img-park iconfont icon-home-park" page_url="park"/>
 </view>
 <view class="home-nav home-nav2">
-  <nav-icon title="楼下小店" img-icon="img-store iconfont icon-home-store" page_url="store"/>
-  <nav-icon title="超市生鲜" img-icon="img-decorate iconfont icon-home-decorate" page_url="decorate"/>
+  <nav-icon title="生鲜超市" img-icon="img-decorate iconfont icon-home-decorate" page_url="decorate"/>
+  <nav-icon title="楼下小吃" img-icon="img-store iconfont icon-home-store" page_url="store"/>
   <nav-icon title="搬运家政" img-icon="img-carry iconfont icon-home-carry" page_url="carry"/>
   <nav-icon title="变废为宝" img-icon="img-flea iconfont icon-home-flea" page_url="flea"/>
+  
+  
 </view>
 
 <!-- home页面的内容 -->

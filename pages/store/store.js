@@ -545,7 +545,7 @@ Page({
       },
       {
         id: 1,
-        name: '超市生鲜',
+        name: '分类',
         isActive: false,
         icon: "icon-store-market"
       },

@@ -6,6 +6,20 @@
   "description": "这是我的社区物业项目的 图标",
   "glyphs": [
     {
+      "icon_id": "1313811",
+      "name": "超市",
+      "font_class": "gouwu-2",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "9251688",
+      "name": "23-螃蟹",
+      "font_class": "-pangxie",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
       "icon_id": "4747376",
       "name": "咨询",
       "font_class": "zixun",

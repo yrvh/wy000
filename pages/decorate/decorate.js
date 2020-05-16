@@ -10,25 +10,25 @@ Page({
         id: 0,
         name: '首页',
         isActive: true,
-        icon: "icon-decorate-add"
+        icon: "icon-decorate-home"
       },
       {
         id: 1,
         name: '分类',
         isActive: false,
-        icon: "icon-decorate-materials"
+        icon: "icon-decorate-kind"
       },
       {
         id: 2,
         name: '购物车',
         isActive: false,
-        icon: "icon-decorate-mine"
+        icon: "icon-store-car"
       },
       {
         id: 3,
         name: '我的',
         isActive: false,
-        icon: "icon-decorate-mine"
+        icon: "icon-store-mine"
       }
     ]
   },

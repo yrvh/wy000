@@ -3,7 +3,7 @@
 <!-- 引入自定义的tabbar -->
 <custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
 
-  <view class="v2css">该功能将在 版本2.0发布!~</view>
+  <view class="v2css">生鲜超市的页面</view>
 
   <!-- 生鲜首页 -->
   <block wx:if="{{tabs[0].isActive}}">
