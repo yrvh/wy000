@@ -14,7 +14,7 @@
     <view class="fee-top-place"></view>
 
     <block wx:for="{{5}}" wx:key="index">
-      <view class="fee-body">
+      <view class="fee-box">
         <view class="fee-date">[ ] 2020年01月费用(4#1503)</view>
         <view class="fee-thead">
           <view>费用</view>

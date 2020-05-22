@@ -15,7 +15,9 @@
     "pages/decorate/decorate",
     "pages/rent/rentdetail/rentdetail",
     "pages/store/address/address",
-    "pages/store/add_address/add_address"
+    "pages/store/add_address/add_address",
+    "pages/car/car",
+    "pages/boutique/boutique"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39B54A",
@@ -40,16 +42,22 @@
         "selectedIconPath": "/assets/icon/home1.png"
       },
       {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/assets/icon/message.png",
+        "selectedIconPath": "/assets/icon/message1.png"
+      },
+      {
         "pagePath": "pages/dynamic/dynamic",
         "text": "动态",
         "iconPath": "/assets/icon/dynamic.png",
         "selectedIconPath": "/assets/icon/dynamic1.png"
       },
       {
-        "pagePath": "pages/message/message",
-        "text": "消息",
-        "iconPath": "/assets/icon/message.png",
-        "selectedIconPath": "/assets/icon/message1.png"
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "/assets/icon/car.png",
+        "selectedIconPath": "/assets/icon/car1.png"
       },
       {
         "pagePath": "pages/mine/mine",

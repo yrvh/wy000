@@ -25,8 +25,8 @@
 /* .img-store {background: linear-gradient(45deg,#c52d22, #e54d42,#ff7d72);} */
 .img-store {background: linear-gradient(45deg, #d35b00,#f37b1d),#ff9b3d;}
 .img-carry {background: linear-gradient(45deg,#c03977,#e05997,#ff79b7);}
-.img-flea {background: linear-gradient(45deg, #0061bf,#0081df,#30b1ff);}
-.img-decorate {background: linear-gradient(45deg,#b5774f,#d5976f,#f5b78f);}
+.img-flea {background: linear-gradient(45deg,#b5774f,#d5976f,#f5b78f);}
+.img-decorate {background: linear-gradient(45deg, #0061bf,#0081df,#30b1ff);}
 
 /* 小区头条 */
 .home-content {padding: 0 20rpx;}

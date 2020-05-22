@@ -10,7 +10,7 @@ page {--rent_color: #fbbd08;}
 page {--park_color: #df4545;}
 page {--store_color: #f37b1d;}
 page {--carry_color: #e05997;}
-page {--flea_color: #0081df;}
-page {--decorate_color: #b5976f;}
+page {--flea_color: #b5976f;}
+page {--decorate_color: #0081df;}
 
 

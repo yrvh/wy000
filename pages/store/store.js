@@ -545,9 +545,9 @@ Page({
       },
       {
         id: 1,
-        name: '超市生鲜',
+        name: '优惠热卖',
         isActive: false,
-        icon: "icon-store-market"
+        icon: "icon-store-discounts"
       },
       {
         id: 2,
