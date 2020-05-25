@@ -1,4 +1,4 @@
-<!--pages/store/address/address.wxml-->
+<!--pages/address/address.wxml-->
 <top-search placehod="搜小区 等..." topcss="topcss" searchcss="searchcss">
       <view slot="search_shift" class="city-location">
         <picker class="location-name" mode="region" bindchange="handleChangeCity">

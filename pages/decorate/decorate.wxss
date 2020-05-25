@@ -1,9 +1,0 @@
-/* pages/decorate/decorate.wxss */
-
-/* 页面的tabbar样式 */
-.cst-tabbar2 {background-color: rgba(230, 230, 230, 0.9) !important;}
-.act-img2 {color:var(--decorate_color) !important;}
-.act-text2 {color:var(--decorate_color) !important;}
-
-
-.v2css {text-align: center; line-height: 600rpx; font-size: 44rpx; color: var(--decorate_color);}

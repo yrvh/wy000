@@ -64,15 +64,8 @@
 					"scene": null
 				},
 				{
-					"id": 4,
-					"name": "搬运6",
-					"pathName": "pages/carry/carry",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 5,
-					"name": "小店5",
+					"id": 2,
+					"name": "小吃6",
 					"pathName": "pages/store/store",
 					"query": "",
 					"scene": null
@@ -85,57 +78,43 @@
 					"scene": null
 				},
 				{
-					"id": 7,
-					"name": "报修2",
+					"id": 4,
+					"name": "报修3",
 					"pathName": "pages/repair/repair",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 8,
-					"name": "变废为宝7",
-					"pathName": "pages/flea/flea",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 9,
-					"name": "装修8",
-					"pathName": "pages/decorate/decorate",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 10,
-					"name": "停车4",
+					"id": 5,
+					"name": "停车2",
 					"pathName": "pages/park/park",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 12,
-					"name": "租售3",
+					"id": 6,
+					"name": "租售4",
 					"pathName": "pages/rent/rent",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 10,
-					"name": "二  动态",
+					"id": 7,
+					"name": "三  动态",
 					"pathName": "pages/dynamic/dynamic",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "三 消息",
+					"id": 8,
+					"name": "二 消息",
 					"pathName": "pages/message/message",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "四 个人中心",
+					"id": 9,
+					"name": "五 个人中心",
 					"pathName": "pages/mine/mine",
 					"query": "",
 					"scene": null
@@ -151,6 +130,27 @@
 					"id": -1,
 					"name": "新增收货地址",
 					"pathName": "pages/store/add_address/add_address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "水果生鲜7",
+					"pathName": "pages/fruit/fruit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "东盟小吃8",
+					"pathName": "pages/foreign/foreign",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商铺详情x1",
+					"pathName": "pages/shops/shops",
 					"query": "",
 					"scene": null
 				}

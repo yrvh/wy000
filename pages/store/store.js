@@ -11,7 +11,7 @@ Page({
         amount: 3450,
         sendmin:20,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -63,7 +63,7 @@ Page({
         amount: 2560,
         sendmin:15,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -115,7 +115,7 @@ Page({
         amount: 5675,
         sendmin:20,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -167,7 +167,7 @@ Page({
         amount: 3453,
         sendmin:25,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -219,7 +219,7 @@ Page({
         amount: 7689,
         sendmin:30,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -271,7 +271,7 @@ Page({
         amount: 5463,
         sendmin:15,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -323,7 +323,7 @@ Page({
         amount: 9239,
         sendmin:18,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -375,7 +375,7 @@ Page({
         amount: 8890,
         sendmin:30,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -427,7 +427,7 @@ Page({
         amount: 2345,
         sendmin:20,
         discounts: ['20减6','50减18','100减42','150减67',],
-        recommend: [
+        goods: [
           {
             img: '1.jpg',
             name: '水煮鱼',
@@ -539,27 +539,21 @@ Page({
     tabs: [
       {
         id: 0,
-        name: '美食奶茶',
+        name: '吃货美食',
         isActive: true,
         icon: "icon-store-cate"
       },
       {
         id: 1,
-        name: '优惠热卖',
+        name: '奶茶果汁',
         isActive: false,
-        icon: "icon-store-discounts"
+        icon: "icon-store-juice"
       },
       {
         id: 2,
-        name: '购物车',
+        name: '优惠热卖',
         isActive: false,
-        icon: "icon-store-car"
-      },
-      {
-        id: 3,
-        name: '我的',
-        isActive: false,
-        icon: "icon-store-mine"
+        icon: "icon-store-discounts"
       }
     ]
   },
@@ -575,16 +569,22 @@ Page({
   // 点击跳转到 定位的详情页
   handleLocDetail() {
     wx.navigateTo({
-      url: '/pages/store/address/address',
+      url: '/pages/address/address',
     })
   },
   // 点击中部导航 切换内容展示部分
   handleNavChange(e) {
     let {index} = e.currentTarget.dataset
     let {nav_arr} = this.data
-    nav_arr.forEach((item,i) => {i==index? item.isActive=true : item.isActive= false})
+    nav_arr.forEach((item,i) => {i==index? item.isActive=true : item.isActive=false})
     this.setData({
       nav_arr
+    })
+  },
+  // 点击店铺进入店铺详情页
+  handleStoreItem() {
+    wx.navigateTo({
+      url: '/pages/shops/shops',
     })
   },
 

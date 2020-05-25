@@ -39,15 +39,15 @@
 <!-- home页面的导航区 -->
 <view class="home-nav home-nav1">
   <nav-icon title="物业缴费" img-icon="img-fee iconfont icon-home-fee" page_url="fee"/>
+  <nav-icon title="车位门禁" img-icon="img-park iconfont icon-home-park" page_url="park"/>
   <nav-icon title="房屋报修" img-icon="img-repair iconfont icon-home-repair" page_url="repair"/>
   <nav-icon title="业主租售" img-icon="img-rent iconfont icon-home-rent" page_url="rent"/>
-  <nav-icon title="车位门禁" img-icon="img-park iconfont icon-home-park" page_url="park"/>
 </view>
 <view class="home-nav home-nav2">
-  <nav-icon title="吃喝玩" img-icon="img-store iconfont icon-home-store" page_url="store"/>
-  <nav-icon title="楼下小吃" img-icon="img-store iconfont icon-home-store" page_url="store"/>
-  <nav-icon title="水果生鲜" img-icon="img-store iconfont icon-home-store" page_url="store"/>
-  <nav-icon title="东盟小吃" img-icon="img-store iconfont icon-home-store" page_url="store"/>
+  <nav-icon title="吃喝玩" img-icon="img-boutique iconfont icon-home-boutique" page_url="boutique"/>
+  <nav-icon title="楼下小店" img-icon="img-store iconfont icon-home-store" page_url="store"/>
+  <nav-icon title="水果生鲜" img-icon="img-fruit iconfont icon-home-fruit" page_url="fruit"/>
+  <nav-icon title="东盟特产" img-icon="img-foreign iconfont icon-home-foreign" page_url="foreign"/>
   <!-- <nav-icon title="水果生鲜" img-icon="img-decorate iconfont icon-home-decorate" page_url="decorate"/>
   <nav-icon title="搬运家政" img-icon="img-carry iconfont icon-home-carry" page_url="carry"/>
   <nav-icon title="变废为宝" img-icon="img-flea iconfont icon-home-flea" page_url="flea"/> -->

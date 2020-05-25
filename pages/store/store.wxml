@@ -77,7 +77,7 @@
    
     <!-- 美食页面的内容部分 -->
     <view class="store-content">
-      <view class="store-listbox" wx:for="{{list_arr}}" wx:key="index">
+      <view class="store-listbox" wx:for="{{list_arr}}" wx:key="index" bindtap="handleStoreItem">
         <view class="listbox-img">
           <image src="{{fStr.formatStr('swipers',item.ava)}}"></image>
         </view>
@@ -91,8 +91,9 @@
           <view class="listbox-discounts">
             <c-tag wx:for="{{item.discounts}}" wx:for-item="itemdis" wx:for-index="indexdis" wx:key="indexdis" name="{{itemdis}}" tagcss="tagcss"></c-tag>
           </view>
-          <scroll-view class="listbox-recommend" scroll-x enable-flex scroll-with-animation>
-            <view class="recommend-box"  id="index2" wx:for="{{item.recommend}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
+          <!-- 商品列表 -->
+          <scroll-view class="listbox-goods" scroll-x  scroll-with-animation>
+            <view class="goods-box"  id="index2" wx:for="{{item.goods}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
               <image src="{{fStr.formatStr('swipers',item2.img)}}"></image>
               <view class="dishes">{{item2.name}}</view>
               <view class="price">
@@ -100,8 +101,8 @@
                 <text class="old_price">¥{{item2.old_price}}</text>
               </view>
             </view>
-          
           </scroll-view>
+
         </view>
       </view>
     </view>
@@ -109,17 +110,12 @@
 
   <!-- 超市页面 -->
   <block wx:if="{{tabs[1].isActive}}">
-    <view>超市页面</view>
+    <view>奶茶果汁</view>
   </block>
 
   <!-- 购物车页面 -->
   <block wx:if="{{tabs[2].isActive}}">
-    <view>购物车页面</view>
-  </block>
-
-  <!-- 我的页面 -->
-  <block wx:if="{{tabs[3].isActive}}">
-    <view>我的</view>
+    <view>优惠热卖</view>
   </block>
   
 </custom-tabbar>

@@ -50,12 +50,12 @@ page {background-color: #fffafa; padding-bottom: 9vh;}
 .listbox-discounts {display: flex; margin: 8rpx 0 20rpx;}
 .listbox-discounts .tagcss {font-size: 22rpx; color: var(--store_color); border-color: var(--store_color) !important; padding: 0 10rpx !important;}
 
-.listbox-recommend {width: 610rpx; padding-bottom: 14rpx; overflow: hidden; white-space: nowrap;} 
-.recommend-box {display: inline-block; width: 180rpx; margin-right: 24rpx;}
-.recommend-box image {width: 180rpx; height: 180rpx; background-color: #8df; border-radius: 6%;}
-.recommend-box .dishes {margin: 10rpx 0;}
-.recommend-box .new_price {font-size: 28rpx; color: #e42; margin-right: 14rpx;}
-.recommend-box .old_price {font-size: 22rpx; color: #999; text-decoration: line-through;}
+.listbox-goods {width: 610rpx; padding-bottom: 14rpx; overflow: hidden; white-space: nowrap;} 
+.goods-box {display: inline-block; width: 180rpx; margin-right: 24rpx;}
+.goods-box image {width: 180rpx; height: 180rpx; border-radius: 6%;}
+.goods-box .dishes {margin: 10rpx 0;}
+.goods-box .new_price {font-size: 28rpx; color: #e42; margin-right: 14rpx;}
+.goods-box .old_price {font-size: 20rpx; color: #999; text-decoration: line-through;}
 
 
 

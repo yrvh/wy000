@@ -1,4 +1,4 @@
-<!--pages/store/add_address/add_address.wxml-->
+<!--pages/add_address/add_address.wxml-->
 <view class="addbox">
   <view class="item addbox-address">
     <text>地址</text>

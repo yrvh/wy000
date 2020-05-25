@@ -1,0 +1,27 @@
+/* pages/shops/shops.wxss */
+.shops-top {width: 90%; border-radius: 10rpx; margin: 0 auto; box-shadow: 0 3rpx 8rpx 0 #999; display: flex; justify-content: space-between; padding: 14rpx;}
+.shops-ava {width: 140rpx; height: 140rpx; background-color: cornflowerblue;}
+.shops-info {flex: 1; padding-left: 14rpx;}
+.shops-info .info-name {display: flex;justify-content: space-between;}
+.shops-info .info-name .info-name-content {font-size: 34rpx;}
+.shops-info .info-discounts {margin: 10rpx 0 20rpx;}
+.tagcss-attention {font-size: 24rpx; color: #555; line-height: 42rpx !important;}
+.tagcss-discounts {font-size: 20rpx; color: #e54b27; border-color: #e54b27 !important;}
+.info-message {color: #999; font-size: 20rpx;}
+
+/* 中部导航( 点菜/评价/套餐/商家) */
+.shops-nav {margin-top: 40rpx; background-color: #f9f9f9; padding: 20rpx 20rpx 14rpx;}
+.shops-nav-item {display: inline-block; margin-right: 58rpx;}
+.shops-nav-item text {display: inline-block; font-size: 32rpx; color: #666;}
+.nav-active text {font-weight: 600; color: var(--store_color) !important;}
+.nav-active .nav-item-underline {margin-top: 10rpx; width: 100%; height: 4rpx; border-radius: 2rpx; background-color: var(--store_color);}
+
+.shops-type {height: 1130rpx; display: flex; margin-top: 20rpx;}
+.shops-type-side {height: 100%; width: 180rpx; background-color: #f4f4f4; white-space: nowrap; overflow: hidden;}
+.side-item {line-height: 90rpx; text-align: center; color: #555;}
+.side-active {background-color: #fff;}
+
+
+
+
+.shops-type-content {height: 100%; flex: 1; background-color: indianred;}

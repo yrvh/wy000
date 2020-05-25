@@ -1,0 +1,34 @@
+<!--pages/shops/shops.wxml-->
+<view class="shops-top">
+  <image class="shops-ava">头像</image>
+  <view class="shops-info">
+    <view class="info-name">
+      <text class="info-name-content">{{'店铺名字'}}</text> 
+      <c-tag name="关注" tagcss="tagcss-attention" />
+    </view>
+    <view class="info-discounts">
+      <c-tag name="25减8" tagcss="tagcss-discounts"/>
+      <c-tag name="45减11" tagcss="tagcss-discounts"/>
+      <c-tag name="75减20" tagcss="tagcss-discounts"/>
+      <c-tag name="首单减6" tagcss="tagcss-discounts"/>
+    </view>
+    <view class="info-message">留言: {{'本店所有菜品均为先做, 提供正规发票!'}}</view>
+  </view>
+
+</view>
+<view class="shops-nav">
+  <view wx:for="{{nav_arr}}" wx:key="id" class="shops-nav-item {{item.isActive? 'nav-active':''}}" bindtap="handleNavChange" data-index="{{index}}">
+    <text class="nav-item-title">{{item.title}}</text>
+    <view class="nav-item-underline"></view>
+  </view>
+</view>
+<view class="shops-type">
+  <scroll-view class="shops-type-side" scroll-y scroll-with-animation>
+    <view wx:for="{{side_arr}}" wx:key="id" class="side-item {{item.isActive? 'side-active':''}}" bindtap="handleSideChange" data-index="{{index}}">{{item.name}}</view>
+  </scroll-view>
+
+  <scroll-view class="shops-type-content" scroll-y scroll-with-animation>
+    <view wx:for="{{food_arr}}" wx:key="id" class="food-item {{item.isActive? 'food-active':''}}" bindtap="handleFoodChange" data-index="{{index}}">{{item.name}}</view>
+  </scroll-view>
+</view>
+

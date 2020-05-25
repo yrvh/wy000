@@ -1,4 +1,4 @@
-// pages/store/add_address/add_address.js
+// pages/add_address/add_address.js
 Page({
 
   /**

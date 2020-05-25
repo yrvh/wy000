@@ -1,51 +1,45 @@
-// pages/decorate/decorate.js
+// pages/address/address.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tabs: [
-      {
-        id: 0,
-        name: '首页',
-        isActive: true,
-        icon: "icon-decorate-add"
-      },
-      {
-        id: 1,
-        name: '分类',
-        isActive: false,
-        icon: "icon-decorate-materials"
-      },
-      {
-        id: 2,
-        name: '购物车',
-        isActive: false,
-        icon: "icon-decorate-mine"
-      },
-      {
-        id: 3,
-        name: '我的',
-        isActive: false,
-        icon: "icon-decorate-mine"
-      }
-    ]
+    cityloc: '北海市',
+    communityloc: '春天花园小区'
   },
-
-  tabbarChange2(e){   // 通过函数改变默认的激活项
-    const {tindex} = e.detail
-    let {tabs} = this.data
-    tabs.forEach( (item,index) => { index == tindex? item.isActive = true : item.isActive = false })
-    this.setData({
-      tabs: tabs
-    })
-  },
-
-  handleAddRepair() {
+  // 新增地址
+  handleAdd() {
     wx.navigateTo({
-      url: '/pages/repair/repairadd/repairadd',
+      url: '/pages/add_address/add_address',
     })
+  },
+  // 切换城市
+  handleChangeCity(e) {
+    this.setData({
+      cityloc: e.detail.value[1]
+    })
+  },
+  // 点击选择了一个地址
+  handleSelectLoc() {
+    // 跳转
+    wx.navigateBack({
+      delta: 1,
+      complete: (res) => {console.log("选择了一个地址")},
+    })
+  },
+  // 重新定位
+  handleLocation() {
+    // wx.getLocation({
+    //   type: 'wgs84',
+    //   isHighAccuracy: true,
+    //   highAccuracyExpireTime: 3000,
+    //   success(res) {
+    //     console.log(res)
+    //     const lat = res.latitude
+    //     const long = res.longitude
+    //   }
+    // })
   },
 
   /**

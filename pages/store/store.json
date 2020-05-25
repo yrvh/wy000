@@ -1,7 +1,7 @@
 {
-  "navigationBarBackgroundColor": "#f37b1d",
+  "navigationBarBackgroundColor": "#e54b27",
   "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "楼下小店",
+  "navigationBarTitleText": "楼下小吃",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": false,

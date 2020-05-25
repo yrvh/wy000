@@ -6,6 +6,41 @@
   "description": "这是我的社区物业项目的 图标",
   "glyphs": [
     {
+      "icon_id": "5173395",
+      "name": "珍珠奶茶",
+      "font_class": "zhenzhunaicha",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "5075805",
+      "name": "古城",
+      "font_class": "gucheng",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "12363298",
+      "name": "古风物件，中国风，古代器物，酒器，爵",
+      "font_class": "gufengwujianzhongguofenggudaiqiwujiuqijue_huaban_huaban",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "4183416",
+      "name": "AK-YK国际",
+      "font_class": "yk_guoji",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4183417",
+      "name": "AK-YK国际_fill",
+      "font_class": "yk_guoji_fill",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
       "icon_id": "2076226",
       "name": " 水果",
       "font_class": "shuiguo",

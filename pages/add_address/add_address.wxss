@@ -1,4 +1,4 @@
-/* pages/store/add_address/add_address.wxss */
+/* pages/add_address/add_address.wxss */
 
 .addbox {padding: 30rpx;}
 .addbox .item {height: 90rpx; border-bottom: 1rpx solid #ddd; display: flex; align-items: center;}

@@ -1,45 +1,11 @@
-// pages/store/address/address.js
+// pages/foreign/foreign.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    cityloc: '北海市',
-    communityloc: '春天花园小区'
-  },
-  // 新增地址
-  handleAdd() {
-    wx.navigateTo({
-      url: '/pages/store/add_address/add_address',
-    })
-  },
-  // 切换城市
-  handleChangeCity(e) {
-    this.setData({
-      cityloc: e.detail.value[1]
-    })
-  },
-  // 点击选择了一个地址
-  handleSelectLoc() {
-    // 跳转
-    wx.navigateBack({
-      delta: 1,
-      complete: (res) => {console.log("选择了一个地址")},
-    })
-  },
-  // 重新定位
-  handleLocation() {
-    // wx.getLocation({
-    //   type: 'wgs84',
-    //   isHighAccuracy: true,
-    //   highAccuracyExpireTime: 3000,
-    //   success(res) {
-    //     console.log(res)
-    //     const lat = res.latitude
-    //     const long = res.longitude
-    //   }
-    // })
+
   },
 
   /**

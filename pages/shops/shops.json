@@ -1,10 +1,10 @@
 {
-  "navigationBarBackgroundColor": "#b5976f",
+  "navigationBarBackgroundColor": "#e54b27",
   "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "变废为宝",
+  "navigationBarTitleText": "楼下小吃",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
-  "enablePullDownRefresh": true,
+  "enablePullDownRefresh": false,
   "onReachBottomDistance": 30,
   "usingComponents": {}
 }

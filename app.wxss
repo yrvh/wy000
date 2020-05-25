@@ -7,10 +7,12 @@ page,view,text,text,swiper,swiper-item,image,navigator,input {font-size: 28rpx; 
 page {--home_color: #39b54a;}
 page {--repair_color: #1cbbb4;}
 page {--rent_color: #fbbd08;}
-page {--park_color: #df4545;}
-page {--store_color: #f37b1d;}
+page {--park_color: #f37b1d;}
+page {--store_color: #e54b27;}
 page {--carry_color: #e05997;}
 page {--flea_color: #b5976f;}
 page {--decorate_color: #0081df;}
+page {--boutique_color: #775532;}
+page {--foreign_color: #43464b;}
 
 

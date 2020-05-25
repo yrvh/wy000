@@ -1,4 +1,4 @@
-/* pages/store/address/address.wxss */
+/* pages/address/address.wxss */
 
 .topcss {border-bottom: 1rpx solid #ddd;}
 .searchcss {background-color: #f4f4f4 !important;}

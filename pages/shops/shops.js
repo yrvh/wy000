@@ -1,52 +1,73 @@
-// pages/flea/flea.js
+// pages/shops/shops.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tabs: [
+    nav_arr: [
       {
         id: 0,
-        name: '二手直卖',
-        isActive: true,
-        icon: "icon-flea-direct"
+        title: '点餐',
+        isActive: true
       },
       {
         id: 1,
-        name: '分类',
-        isActive: false,
-        icon: "icon-flea-kind"
+        title: '评价',
+        isActive: false
       },
       {
         id: 2,
-        name: '发布',
+        title: '商家',
+        isActive: false
+      }
+    ],
+    side_arr: [
+      {
+        id: 0,
+        name: '本店特惠',
+        isActive: true,
+      },
+      {
+        id: 1,
+        name: '本店套餐',
         isActive: false,
-        icon: "icon-flea-add"
+      },
+      {
+        id: 2,
+        name: '美味小炒',
+        isActive: false,
       },
       {
         id: 3,
-        name: '我的',
+        name: '特色炖菜',
         isActive: false,
-        icon: "icon-flea-mine"
       },
+      {
+        id: 4,
+        name: '主食饮料',
+        isActive: false,
+      }
     ]
   },
-
-  tabbarChange2(e){   // 通过函数改变默认的激活项
-    const {tindex} = e.detail
-    let {tabs} = this.data
-    tabs.forEach( (item,index) => { index == tindex? item.isActive = true : item.isActive = false })
-    this.setData({
-      tabs: tabs
-    })
-  },
-
-  handleAddRepair() {
-    wx.navigateTo({
-      url: '/pages/repair/repairadd/repairadd',
-    })
-  },
+  // 点击切换中部导航
+handleNavChange(e) {
+  let {index} = e.currentTarget.dataset
+  let {nav_arr} = this.data
+  nav_arr.forEach((item,i) => {i==index? item.isActive=true : item.isActive=false})
+  this.setData({
+    nav_arr
+  })
+},
+  // 点击侧边栏导航
+handleSideChange(e) {
+  let {index} = e.currentTarget.dataset
+  let {side_arr} = this.data
+  side_arr.forEach((item,i) => {i==index? item.isActive=true : item.isActive=false})
+  this.setData({
+    side_arr
+  })
+},
 
   /**
    * 生命周期函数--监听页面加载

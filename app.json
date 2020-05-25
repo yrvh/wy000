@@ -11,13 +11,14 @@
     "pages/park/park",
     "pages/store/store",
     "pages/carry/carry",
-    "pages/flea/flea",
-    "pages/decorate/decorate",
     "pages/rent/rentdetail/rentdetail",
-    "pages/store/address/address",
-    "pages/store/add_address/add_address",
+    "pages/address/address",
+    "pages/add_address/add_address",
     "pages/car/car",
-    "pages/boutique/boutique"
+    "pages/boutique/boutique",
+    "pages/fruit/fruit",
+    "pages/foreign/foreign",
+    "pages/shops/shops"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39B54A",
