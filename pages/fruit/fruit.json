@@ -1,3 +1,11 @@
 {
+  
+  "navigationBarBackgroundColor": "#0081df",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "水果生鲜",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 30,
   "usingComponents": {}
 }

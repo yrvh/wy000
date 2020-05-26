@@ -1,0 +1,12 @@
+<!--components/store-nav/store-nav.wxml-->
+
+<!-- 导入数据处理函数 -->
+<wxs src="../../pages/wxs/fStr.wxs" module="fStr"> </wxs>
+
+<scroll-view class="store-nav" scroll-x enable-flex scroll-with-animation>
+  <view wx:for="{{nav_arr}}" id="item.id" wx:key="id" class="nav-item {{item.isActive? 'nav-active':''}}" bindtap="handleNavChange" data-id="{{item.id}}">
+    <image class="nav-item-img" src="{{fStr.formatStr('swipers',item.icon)}}"></image>
+    <text class="nav-item-title">{{item.title}}</text>
+    <view class="nav-item-underline"></view>
+  </view>
+</scroll-view>

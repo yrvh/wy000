@@ -6,6 +6,55 @@
   "description": "这是我的社区物业项目的 图标",
   "glyphs": [
     {
+      "icon_id": "113542",
+      "name": "优惠券",
+      "font_class": "coupon",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "947085",
+      "name": "零食",
+      "font_class": "lingshi",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "3904411",
+      "name": "零食",
+      "font_class": "lingshi1",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "5025782",
+      "name": "水果",
+      "font_class": "shuiguo1",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "5092007",
+      "name": "糖果&甜食&零食",
+      "font_class": "tangguotianshilingshi",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "5193356",
+      "name": "虾",
+      "font_class": "xia",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "5901479",
+      "name": "芒果",
+      "font_class": "mangguo",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
       "icon_id": "5173395",
       "name": "珍珠奶茶",
       "font_class": "zhenzhunaicha",

@@ -18,7 +18,8 @@
     "pages/boutique/boutique",
     "pages/fruit/fruit",
     "pages/foreign/foreign",
-    "pages/shops/shops"
+    "pages/shops/shops",
+    "pages/goods/goods"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39B54A",
@@ -82,6 +83,8 @@
     "custom-tabbar": "/components/custom-tabbar/custom-tabbar",
     "c-tag": "/components/c-tag/c-tag",
     "top-search": "/components/top-search/top-search",
-    "input-number": "/components/inputNumber/inputNumber"
+    "input-number": "/components/inputNumber/inputNumber",
+    "show-store": "/components/show-store/show-store",
+    "store-nav": "/components/store-nav/store-nav"
   }
 }

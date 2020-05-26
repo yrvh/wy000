@@ -1,3 +1,10 @@
 {
+  "navigationBarBackgroundColor": "#43464b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "东盟特产",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 30,
   "usingComponents": {}
 }

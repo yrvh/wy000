@@ -5,6 +5,7 @@ Page({
     // 店铺列表数据
     list_arr: [
       {
+        id: 0,
         ava: 'dish.png',
         name: '重庆川菜馆',
         grade: '9.7',
@@ -13,42 +14,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 10,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 11,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 12,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 13,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 14,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 15,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 16,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -57,6 +65,7 @@ Page({
         ],
       },
       {
+        id: 1,
         ava: 'barbecue.png',
         name: '大旺烧烤店',
         grade: '8.6',
@@ -65,42 +74,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 21,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 22,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 23,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 24,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 25,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 26,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 27,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -109,6 +125,7 @@ Page({
         ],
       },
       {
+        id: 2,
         ava: 'pepper.png',
         name: '张记麻辣烫',
         grade: '9.9',
@@ -117,42 +134,50 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 31,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            
+            food_id: 32,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 33,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 34,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 35,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 36,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 37,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -161,6 +186,7 @@ Page({
         ],
       },
       {
+        id: 3,
         ava: 'noodles.png',
         name: '兰州拉面',
         grade: '9.8',
@@ -169,42 +195,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 91,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 92,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 93,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 94,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 95,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 96,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 97,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -213,6 +246,7 @@ Page({
         ],
       },
       {
+        id: 4,
         ava: 'hamburger.png',
         name: '华莱士汉堡',
         grade: '9.6',
@@ -221,42 +255,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 41,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 42,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 43,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 44,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 45,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 46,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 47,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -265,6 +306,7 @@ Page({
         ],
       },
       {
+        id: 5,
         ava: 'rice.png',
         name: '特色腊烧饭',
         grade: '9.3',
@@ -273,42 +315,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 51,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 52,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 53,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 54,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 55,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 56,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 57,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -317,6 +366,7 @@ Page({
         ],
       },
       {
+        id: 6,
         ava: 'barbecue.png',
         name: '冰沙奶茶店',
         grade: '8.8',
@@ -325,42 +375,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 61,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 62,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 63,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 64,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 65,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 66,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 67,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -369,6 +426,7 @@ Page({
         ],
       },
       {
+        id: 7,
         ava: 'allfood.png',
         name: '东北菜馆',
         grade: '9.1',
@@ -377,42 +435,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 71,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 72,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 73,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 74,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 75,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 76,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 77,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -421,6 +486,7 @@ Page({
         ],
       },
       {
+        id: 8,
         ava: 'chafingdish.png',
         name: '川湘火锅店',
         grade: '9.1',
@@ -429,42 +495,49 @@ Page({
         discounts: ['20减6','50减18','100减42','150减67',],
         goods: [
           {
+            food_id: 81,
             img: '1.jpg',
             name: '水煮鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 82,
             img: '2.jpg',
             name: '毛血旺',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 83,
             img: '3.gif',
             name: '猪肚鸡',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 84,
             img: '4.jpg',
             name: '得莫利炖鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 85,
             img: '5.jpg',
             name: '酸菜鱼',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 86,
             img: '6.jpg',
             name: '麻婆豆腐',
             new_price: 43,
             old_price: 55
           },
           {
+            food_id: 87,
             img: '7.jpg',
             name: '麻辣牛蛙',
             new_price: 43,
@@ -486,8 +559,8 @@ Page({
       },
       {
         id: 'f2',
-        icon: 'juice.png',
-        title: '奶茶果汁',
+        icon: 'barbecue.png',
+        title: '烤肉烤串',
         isActive: false
       },
       {
@@ -498,8 +571,8 @@ Page({
       },
       {
         id: 'f4',
-        icon: 'barbecue.png',
-        title: '烧烤炸鸡',
+        icon: 'chicken.png',
+        title: '炸鸡炸串',
         isActive: false
       },
       {
@@ -573,18 +646,19 @@ Page({
     })
   },
   // 点击中部导航 切换内容展示部分
-  handleNavChange(e) {
-    let {index} = e.currentTarget.dataset
+  handleChange(e) {
+    let {id} = e.detail
     let {nav_arr} = this.data
-    nav_arr.forEach((item,i) => {i==index? item.isActive=true : item.isActive=false})
+    nav_arr.forEach((item,i) => {item.id==id? item.isActive=true : item.isActive=false})
     this.setData({
       nav_arr
     })
   },
   // 点击店铺进入店铺详情页
-  handleStoreItem() {
+  handleStoreDetail(e) {
+    let {storeid,storename} = e.detail
     wx.navigateTo({
-      url: '/pages/shops/shops',
+      url: `/pages/shops/shops?storeid=${storeid}&storename=${storename}`,
     })
   },
 

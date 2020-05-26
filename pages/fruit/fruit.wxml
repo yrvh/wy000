@@ -1,2 +1,128 @@
 <!--pages/fruit/fruit.wxml-->
-<text>pages/fruit/fruit.wxml</text>
+
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
+<!-- 引入自定义的tabbar -->
+<custom-tabbar list="{{tabs}}" cst-tabbar="cst-tabbar2" act-img="act-img2" act-text="act-text2" bind:tabbarChange="tabbarChange2">
+
+  <!-- 页面顶部部分 -->
+  <top-search placehod="搜水果/生鲜......" topcss="topcss">
+    <view slot="the_location" class="self-location">
+      <text class="iconfont icon-location"></text>
+      <text class="location-name" bindtap="handleLocDetail">东方之珠</text>
+      <text class="iconfont {{location_detail? 'icon-right':'icon-down'}}"></text>
+    </view>
+  </top-search>
+  <view class="store-hotword"></view>
+  <!-- 美食页面的轮播图 -->
+  <view class="store-swipers">
+    <swiper class="swipers"
+            indicator-dots 
+            indicator-color="rgba(230,230,230,0.2)"
+            indicator-active-color="rgba(0,0,0,0.6)"
+            autoplay
+            interval="{{4000}}"
+            duration="{{600}}"
+            circular
+            easing-function="linear">
+      <block wx:for="{{img_arr}}" wx:key="index">
+        <swiper-item item-id="index">
+          <image src="/assets/swipers/{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 美食页面 -->
+  <block wx:if="{{tabs[0].isActive}}">
+    <!-- 美食页面的中部导航 -->
+    <view  class="nav-container">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+      <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
+    </view>
+    <!-- 中部导航 固定定位,替换区域 -->
+    <view class="nav-container-place" hidden="{{is_hidden}}">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+      <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
+    </view>
+    
+    
+    <!-- 美食页面的内容部分 -->
+    <view class="store-content">
+      <show-store store_list="{{list_arr}}" bind:storeDetail="handleStoreDetail"></show-store>
+    </view>
+  </block>
+
+  <!-- 奶茶果汁页面 -->
+  <block wx:if="{{tabs[1].isActive}}">
+    <!-- 美食页面的中部导航 -->
+    <view  class="nav-container">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+      <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
+    </view>
+    <!-- 中部导航 固定定位,替换区域 -->
+    <view class="nav-container-place" hidden="{{is_hidden}}">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+      <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
+    </view>
+    
+    
+    <!-- 美食页面的内容部分 -->
+    <view class="store-content">
+      <show-store store_list="{{list_arr}}" bind:storeDetail="handleStoreDetail"></show-store>
+    </view>
+  </block>
+
+  <!-- 优惠页面 -->
+  <block wx:if="{{tabs[2].isActive}}">
+    <!-- 美食页面的中部导航 -->
+    <view  class="nav-container">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+      <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
+    </view>
+    <!-- 中部导航 固定定位,替换区域 -->
+    <view class="nav-container-place" hidden="{{is_hidden}}">
+      <view class="store-select">
+        <text>综合排序></text>
+        <text>距离</text>
+        <text>销量</text>
+        <text>筛选</text>
+      </view>
+      <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
+    </view>
+    
+    
+    <!-- 美食页面的内容部分 -->
+    <view class="store-content">
+      <show-store store_list="{{list_arr}}" bind:storeDetail="handleStoreDetail"></show-store>
+    </view>
+  </block>
+  
+</custom-tabbar>
+

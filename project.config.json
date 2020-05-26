@@ -65,7 +65,7 @@
 				},
 				{
 					"id": 2,
-					"name": "小吃6",
+					"name": "小店6",
 					"pathName": "pages/store/store",
 					"query": "",
 					"scene": null

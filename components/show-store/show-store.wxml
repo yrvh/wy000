@@ -1,0 +1,33 @@
+<!--components/show-store/show-store.wxml-->
+
+<!-- 导入数据处理函数 -->
+<wxs src="../../pages/wxs/fStr.wxs" module="fStr"> </wxs>
+
+<view class="store-listbox" wx:for="{{store_list}}" wx:key="id" bindtap="handleStoreItem" data-storeid="{{item.id}}" data-storename="{{item.name}}">
+        <view class="listbox-img">
+          <image class="img" src="{{fStr.formatStr('swipers',item.ava)}}"></image>
+        </view>
+        <view class="listbox-content">
+          <view class="listbox-name">{{item.name}}</view>
+          <view class="listbox-amount">
+            <text class="listbox-amount-grade">评{{item.grade}}</text>
+            <text class="listbox-amount-text">月售 ¥{{item.amount}}</text>
+          </view>
+          <view class="listbox-sendmin">起送 ¥{{item.sendmin}}</view>
+          <view class="listbox-discounts">
+            <c-tag wx:for="{{item.discounts}}" wx:for-item="itemdis" wx:for-index="indexdis" wx:key="indexdis" name="{{itemdis}}" tagcss="tagcss"></c-tag>
+          </view>
+          <!-- 商品列表 -->
+          <scroll-view class="listbox-goods" scroll-x  scroll-with-animation>
+            <view class="goods-box"  id="food_id" wx:for="{{item.goods}}" wx:for-item="item2" wx:for-index="index2" wx:key="food_id">
+              <image class="goods-box-img" src="{{fStr.formatStr('swipers',item2.img)}}"></image>
+              <view class="dishes">{{item2.name}}</view>
+              <view class="price">
+                <text class="new_price">¥{{item2.new_price}}</text>
+                <text class="old_price">¥{{item2.old_price}}</text>
+              </view>
+            </view>
+          </scroll-view>
+
+        </view>
+      </view>

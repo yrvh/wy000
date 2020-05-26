@@ -1,9 +1,13 @@
 <!--pages/shops/shops.wxml-->
+
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
 <view class="shops-top">
-  <image class="shops-ava">头像</image>
+  <image class="shops-ava" src="{{fStr.formatStr('swipers',shops_info.img)}}"></image>
   <view class="shops-info">
     <view class="info-name">
-      <text class="info-name-content">{{'店铺名字'}}</text> 
+      <text class="info-name-content">{{shops_info.name}}</text> 
       <c-tag name="关注" tagcss="tagcss-attention" />
     </view>
     <view class="info-discounts">
@@ -22,13 +26,39 @@
     <view class="nav-item-underline"></view>
   </view>
 </view>
-<view class="shops-type">
-  <scroll-view class="shops-type-side" scroll-y scroll-with-animation>
-    <view wx:for="{{side_arr}}" wx:key="id" class="side-item {{item.isActive? 'side-active':''}}" bindtap="handleSideChange" data-index="{{index}}">{{item.name}}</view>
-  </scroll-view>
 
-  <scroll-view class="shops-type-content" scroll-y scroll-with-animation>
-    <view wx:for="{{food_arr}}" wx:key="id" class="food-item {{item.isActive? 'food-active':''}}" bindtap="handleFoodChange" data-index="{{index}}">{{item.name}}</view>
-  </scroll-view>
-</view>
+<block wx:if="{{nav_arr[0].isActive}}">
+  <view class="shops-content">
+    <scroll-view class="side" scroll-y scroll-with-animation>
+      <view wx:for="{{food_arr}}" wx:key="id" class="side-item {{item.isActive? 'side-active':''}}" bindtap="handleSideChange" data-index="{{index}}">{{item.type_name}}</view>
+    </scroll-view>
+
+    <view class="content">
+      <view class="content-title-top">{{content_title}}</view>
+      <scroll-view class="content-detail" scroll-y scroll-with-animation>
+        <view class="food-type" wx:for="{{food_arr}}" wx:key="id">
+          <view class="food-type-name">{{item.type_name}}</view>
+          <view class="food-type-box">
+            <view class="boxitem"  wx:for="{{item.children}}" wx:key="food_id" wx:for-item="item2">
+              <image class="boxitem-img" src="{{fStr.formatStr('swipers',item2.img)}}"></image>
+              <view class="boxitem-info">
+                {{item2.food_name}}
+                <text class="boxitem-info-price"> ¥{{item2.price}}</text>
+              </view>
+              <view class="boxitem-add">+</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+  </view>
+</block>
+<block wx:elif="{{nav_arr[1].isActive}}">
+  <view> 用户的评价:</view>
+</block>
+<block wx:else="{{nav_arr[2].isActive}}">
+  <view> 店铺的详细信息:</view>
+</block>
+
 

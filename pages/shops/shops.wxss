@@ -10,18 +10,28 @@
 .info-message {color: #999; font-size: 20rpx;}
 
 /* 中部导航( 点菜/评价/套餐/商家) */
-.shops-nav {margin-top: 40rpx; background-color: #f9f9f9; padding: 20rpx 20rpx 14rpx;}
+.shops-nav {margin-top: 40rpx; background-color: #f9f9f9; padding: 30rpx 20rpx 20rpx;}
 .shops-nav-item {display: inline-block; margin-right: 58rpx;}
 .shops-nav-item text {display: inline-block; font-size: 32rpx; color: #666;}
 .nav-active text {font-weight: 600; color: var(--store_color) !important;}
 .nav-active .nav-item-underline {margin-top: 10rpx; width: 100%; height: 4rpx; border-radius: 2rpx; background-color: var(--store_color);}
+/* 菜品内容侧边栏 */
+.shops-content {height: 1130rpx; display: flex;}
+.shops-content .side {height: 100%; width: 170rpx; background-color: #f4f4f4; white-space: nowrap; overflow: hidden; padding-bottom: 50rpx;}
+.side .side-item {line-height: 100rpx; text-align: center; color: #555;}
+.side .side-active {background-color: #fff; color: #000;}
 
-.shops-type {height: 1130rpx; display: flex; margin-top: 20rpx;}
-.shops-type-side {height: 100%; width: 180rpx; background-color: #f4f4f4; white-space: nowrap; overflow: hidden;}
-.side-item {line-height: 90rpx; text-align: center; color: #555;}
-.side-active {background-color: #fff;}
+/* 菜品内容详情 */
+.shops-content .content{height: 100%; flex: 1; padding: 0 10rpx;}
+.content-title-top {line-height: 100rpx; border-bottom: 1rpx dashed #ccc; text-align: center; font-weight: 600;}
+.content-detail {height: 1030rpx; white-space: nowrap; overflow: hidden; padding-bottom: 50rpx;}
 
+.food-type-name {line-height: 80rpx;}
+.food-type-box {display: flex; justify-content: space-between; flex-wrap: wrap;}
+.food-type-box .boxitem {height: 190rpx; margin-bottom: 20rpx; position: relative;}
 
+.food-type-box .boxitem-img {width: 175rpx; height: 190rpx; border-radius: 10rpx;}
+.food-type-box .boxitem-info {font-size: 20rpx; line-height: 40rpx; border-radius: 9rpx; color: #666; background-color: rgba(250,250,250,.7); position: absolute; left: 5rpx; top: 3rpx; padding: 0 6rpx;}
+.boxitem-info-price {font-size: 24rpx; color: var(--store_color);}
 
-
-.shops-type-content {height: 100%; flex: 1; background-color: indianred;}
+.boxitem-add {width: 40rpx; line-height: 40rpx; background-color: var(--store_color); color: #fff; text-align: center; border-radius: 50%; font-size: 34rpx; font-weight: 600; position: absolute; right: 3rpx; bottom: 3rpx;}
