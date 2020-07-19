@@ -20,7 +20,7 @@
 .mine-steward {background-color: #fff; margin-top: 30rpx;}
 .mine-set {background-color: #fff; margin-top: 30rpx;}
 .mine-box {padding-left: 25rpx; display: flex;}
-.mine-box .icon {line-height: 120rpx; width: 120rpx; text-align: center; color: var(--flea_color); font-size: 50rpx;}
+.mine-box .icon {line-height: 120rpx; width: 120rpx; text-align: center; color: var(--fruit_color); font-size: 50rpx;}
 .mine-album .icon {font-size: 40rpx;}
 .mine-box .title{height:120rpx; flex: 1; display: flex; justify-content: space-between; align-items: center; padding: 0 25rpx;}
 .mine-box .title text {font-size: 35rpx;}

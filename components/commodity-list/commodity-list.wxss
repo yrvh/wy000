@@ -1,0 +1,13 @@
+/* components/commodity-list/commodity-list.wxss */
+@import '/assets/iconfont/iconfont.wxss';
+
+.commodity { width: 100%; margin-bottom: 15rpx; display: flex; flex-direction: column; position: relative;}
+.commodity-img { width: 100%; height: 350rpx; margin-bottom: 0 !important; }
+.commodity-bottom {width: 100%; height: 50rpx;background-color: #fff; display: flex; justify-content: flex-end; align-items: center; padding-right: 15rpx; }
+.commodity-bottom .support {margin: 0 35rpx;}
+.commodity-bottom .num {margin-left: 5rpx;}
+.commodity-bottom .fontcolor { color: #666; }
+.commodity-bottom .active .fontcolor { color: #e54b27; }
+
+.commodity-title { position: absolute; top: -4rpx; right: 0; background-color: var(--home_color); border: 4rpx solid #f9f9f9; border-radius: 20rpx 6rpx; padding: 6rpx 12rpx; color: #fff; box-shadow: -2rpx 2rpx 5rpx 0 rgba(200, 200, 200, 1);}
+.commodity-title .commodity-add { display: inline-block; margin-left: 10rpx; width: 50rpx; line-height: 50rpx; background-color: var(--store_color); text-align: center; border-radius: 25rpx; font-weight: 700; font-size: 35rpx; }

@@ -1,2 +1,45 @@
 <!--pages/car/car.wxml-->
-<text>pages/car/car.wxml</text>
+
+<!-- 导入数据处理函数 -->
+<wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
+
+<view class="carbox" wx:for="{{commodity_arr}}" wx:key="index">
+  <view class="car-merchant">{{item.merchant_name}}</view>
+  <view class="car-commodity">
+    <view class="car-checkbox">
+      <label class="car-label">
+        <checkbox value="{{item.id}}" checked="{{item.commodity_slct}}" bindtap="handleCheckbox" data-index="{{index}}"></checkbox>
+      </label>
+    </view>
+    <image class="commodity-img" src="{{fStr.formatStr('swipers',item.img)}}"></image>
+    <view class="commodity-content">
+      <view class="name">{{item.name}}</view>
+      <view class="type">
+        型号:
+        <c-tag wx:for="{{item.type}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2" name="{{item2.typename}}" tagcss="{{item2.selected? 'active-tagcss':'tagcss'}}" bindtap="handleChangeType" data-index="{{index}}" data-index2="{{index2}}"/>
+      </view>
+      <view class="price">
+        <text>¥ {{item.price}}</text>
+        <input-number num_value="{{item.num}}" bind:changeNum="handleChangeNum" data-index="{{index}}"/>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="car-bottom">
+  <label class="car-bottom-label" bindtap="handleAllCheckbox">
+    <checkbox value="all" checked="{{all_checkbox}}"></checkbox>
+    全选
+  </label>
+  <view class="car-bottom-message">
+    <text class="message-icon iconfont icon-carry-message"></text>
+    <text>咨询</text>
+  </view>
+  <view class="car-bottom-btn">
+    <view class="car-order">加入订单</view>
+    <view class="car-settlement">立即结算</view>
+  </view>
+</view>
+
+
+

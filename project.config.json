@@ -51,7 +51,7 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "一 首页",
+					"name": "1首页",
 					"pathName": "pages/home/home",
 					"query": "",
 					"scene": null
@@ -151,6 +151,20 @@
 					"id": -1,
 					"name": "商铺详情x1",
 					"pathName": "pages/shops/shops",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "3购物车",
+					"pathName": "pages/car/car",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "吃喝玩 6",
+					"pathName": "pages/boutique/boutique",
 					"query": "",
 					"scene": null
 				}

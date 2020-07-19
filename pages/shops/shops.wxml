@@ -1,4 +1,4 @@
-<!--pages/shops/shops.wxml-->
+<!--店铺详情页-->
 
 <!-- 导入数据处理函数 -->
 <wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>

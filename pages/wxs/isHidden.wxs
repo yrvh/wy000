@@ -1,0 +1,13 @@
+// 控制是否隐藏
+var hiddenShow = function(item_type,show_type) {
+  if (show_type=='all') {
+    return false
+  }
+  else {
+    return item_type !== show_type
+  }
+}
+
+module.exports = {
+  hiddenShow: hiddenShow
+}

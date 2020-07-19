@@ -1,97 +1,51 @@
-<!--pages/home/home.wxml-->
-<!-- home页面顶部 -->
+<!--pages/store/store.wxml-->
 
 <!-- 导入数据处理函数 -->
 <wxs src="../wxs/fStr.wxs" module="fStr"> </wxs>
-
-<top-search placehod="请输入内容..." topcss="topcss">
-  <text slot="search_push" class="iconfont icon-quickmark"></text>
-</top-search>
+<!-- 导入控制显隐的处理函数 -->
+<wxs src="../wxs/isHidden.wxs" module="isHidden"> </wxs>
 
 
-<!-- home页面的搜索常用词 -->
-<view class="home-hotword"></view>
-
-<!-- home页面的轮播图 -->
-<view class="home-swipers">
-  <view class="home-weather">
-    <view>广西,天气,晴天</view>
-    <view>春天花园小区</view>
-  </view>
-  <swiper class="swipers"
-          indicator-dots 
-          indicator-color="rgba(230,230,230,0.2)"
-          indicator-active-color="rgba(0,0,0,0.6)"
-          autoplay
-          interval="{{4000}}"
-          duration="{{600}}"
-          circular
-          easing-function="linear">
-    <block wx:for="{{img_arr}}" wx:key="index">
-      <swiper-item item-id="index">
-        <image src="/assets/swipers/{{item}}"></image>
-      </swiper-item>
-    </block>
-  </swiper>
-
-</view>
-
-<!-- home页面的导航区 -->
-<view class="home-nav home-nav1">
-  <nav-icon title="物业缴费" img-icon="img-fee iconfont icon-home-fee" page_url="fee"/>
-  <nav-icon title="车位门禁" img-icon="img-park iconfont icon-home-park" page_url="park"/>
-  <nav-icon title="房屋报修" img-icon="img-repair iconfont icon-home-repair" page_url="repair"/>
-  <nav-icon title="业主租售" img-icon="img-rent iconfont icon-home-rent" page_url="rent"/>
-</view>
-<view class="home-nav home-nav2">
-  <nav-icon title="吃喝玩" img-icon="img-boutique iconfont icon-home-boutique" page_url="boutique"/>
-  <nav-icon title="楼下小店" img-icon="img-store iconfont icon-home-store" page_url="store"/>
-  <nav-icon title="水果生鲜" img-icon="img-fruit iconfont icon-home-fruit" page_url="fruit"/>
-  <nav-icon title="东盟特产" img-icon="img-foreign iconfont icon-home-foreign" page_url="foreign"/>
-  <!-- <nav-icon title="水果生鲜" img-icon="img-decorate iconfont icon-home-decorate" page_url="decorate"/>
-  <nav-icon title="搬运家政" img-icon="img-carry iconfont icon-home-carry" page_url="carry"/>
-  <nav-icon title="变废为宝" img-icon="img-flea iconfont icon-home-flea" page_url="flea"/> -->
-</view>
-
-<!-- home页面的内容 -->
-<view class="home-content">
-  <home-detail title="小区头条">
-    <view>
-      <view> 这是头条内容1...</view>
-      <view> 这是头条内容3...</view>
-      <view> 这是头条内容5...</view>
-      <view> 这是头条内容7...</view>
+  <!-- 页面顶部部分 -->
+  <top-search placehod="搜美食/店铺..." topcss="topcss">
+    <view slot="the_location" class="self-location">
+      <text class="iconfont icon-location"></text>
+      <text class="location-name" bindtap="handleLocDetail">东方之珠</text>
+      <text class="iconfont {{location_detail? 'icon-right':'icon-down'}}"></text>
     </view>
-  </home-detail>
+  </top-search>
+  <view class="store-hotword"></view>
+  <!-- 美食页面的轮播图 -->
+  <view class="store-swipers">
+    <swiper class="swipers"
+            indicator-dots 
+            indicator-color="rgba(230,230,230,0.2)"
+            indicator-active-color="rgba(0,0,0,0.6)"
+            autoplay
+            interval="{{4000}}"
+            duration="{{600}}"
+            circular
+            easing-function="linear">
+      <block wx:for="{{img_arr}}" wx:key="index">
+        <swiper-item item-id="index">
+          <image src="/assets/swipers/{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+<!-- 美食页面的中部导航 -->
+<view  class="nav-container">
+  <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
+</view>
+<!-- 中部导航 固定定位,替换区域 -->
+<view class="nav-container-place" hidden="{{is_hidden}}">
+  <store-nav nav_arr="{{nav_arr}}" bind:change="handleChange"></store-nav>
 </view>
 
-<!-- 小店的列表 -->
+<!-- 美食页面的内容部分 -->
 <view class="store-content">
-  <view class="store-listbox" wx:for="{{list_arr}}" wx:key="index">
-    <view class="listbox-img">
-      <image src="{{fStr.formatStr('swipers',item.ava)}}"></image>
-    </view>
-    <view class="listbox-content">
-      <view class="listbox-name">{{item.name}}</view>
-      <view class="listbox-amount">
-        <text class="listbox-amount-grade">评{{item.grade}}</text>
-        <text class="listbox-amount-text">月售 ¥{{item.amount}}</text>
-      </view>
-      <view class="listbox-sendmin">起送 ¥{{item.sendmin}}</view>
-      <view class="listbox-discounts">
-        <c-tag wx:for="{{item.discounts}}" wx:for-item="itemdis" wx:for-index="indexdis" wx:key="indexdis" name="{{itemdis}}" tagcss="tagcss"></c-tag>
-      </view>
-      <scroll-view class="listbox-recommend" scroll-x enable-flex scroll-with-animation>
-        <view class="recommend-box"  id="index2" wx:for="{{item.recommend}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2">
-          <image src="{{fStr.formatStr('swipers',item2.img)}}"></image>
-          <view class="dishes">{{item2.name}}</view>
-          <view class="price">
-            <text class="new_price">¥{{item2.new_price}}</text>
-            <text class="old_price">¥{{item2.old_price}}</text>
-          </view>
-        </view>
-      
-      </scroll-view>
-    </view>
-  </view>
+  <commodity-list commodity_arr="{{commodity_arr}}" personal_action="{{personal_action}}" bind:message="handleMessage" bind:support="handleSupport" bind:share="handleShare" bind:addCat="handleAddCat"> </commodity-list>
 </view>
+

@@ -1,7 +1,7 @@
 @import '/assets/iconfont/iconfont.wxss';
 
 /* 设置页面初始化样式 */
-page,view,text,text,swiper,swiper-item,image,navigator,input,scroll-view {font-size: 28rpx; margin: 0; padding: 0;box-sizing: border-box;}
+page,view,text,text,swiper,swiper-item,image,navigator,input,scroll-view,video {font-size: 28rpx; margin: 0; padding: 0;box-sizing: border-box;}
 
 /* 定义主题颜色 */
 page {--home_color: #39b54a;}
@@ -13,7 +13,7 @@ page {--carry_color: #e05997;}
 page {--flea_color: #b5976f;}
 page {--decorate_color: #0081df;}
 page {--fruit_color: #0081df;}
-page {--boutique_color: #775532;}
-page {--foreign_color: #43464b;}
+page {--boutique_color: #284473;} /*13446c  43464b*/
+page {--foreign_color: #775532;}
 
 

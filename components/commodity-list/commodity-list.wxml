@@ -1,0 +1,29 @@
+<!--components/commodity-list/commodity-list.wxml-->
+
+<!-- 导入数据处理函数 -->
+<wxs src="../../pages/wxs/fStr.wxs" module="fStr"> </wxs>
+<!-- 导入控制显隐的处理函数 -->
+<wxs src="../../pages/wxs/isHidden.wxs" module="isHidden"> </wxs>
+
+<view class="commodity"  wx:for="{{commodity_arr}}" wx:key="commodity_id" hidden="{{isHidden.hiddenShow(item.type,personal_action.store.commodity_type)}}">
+  <view class="commodity-title">
+    {{item. commodity_name}}: {{item.price}}元
+    <view class="commodity-add" bindtap="handleAddCat" data-id="{{item.commodity_id}}" data-name="{{item. commodity_name}}">+</view>
+  </view>
+  <image class="commodity-img" src="{{fStr.formatStr('swipers',item.img)}}"></image>
+  <view class="commodity-bottom">
+    <view class="message" bindtap="handleMessage"  data-id="{{item.commodity_id}}" data-name="{{item. commodity_name}}">
+      <text class="fontcolor iconfont icon-home-message"></text>
+      <text class="fontcolor num">{{item.message_num}}</text>
+    </view>
+
+    <view class="support {{personal_action.store.commodity.support? 'active': ''}}" bindtap="handleSupport"  data-id="{{item.commodity_id}}" data-name="{{item. commodity_name}}">
+      <text class="fontcolor iconfont icon-home-support"></text>
+      <text class="fontcolor num">{{item.support_num}}</text>
+    </view>
+
+    <view class="share" bindtap="handleShare"  data-id="{{item.commodity_id}}" data-name="{{item. commodity_name}}">
+      <text class="fontcolor iconfont icon-home-share"></text>
+    </view>
+  </view>
+</view>
